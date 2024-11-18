@@ -11,17 +11,26 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl apt-transport-https gnupg
+        curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+        curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
+        sudo apt-get update
+        sudo ACCEPT_EULA=Y apt-get install -y msodbcsql18
+        sudo apt-get install -y unixodbc-dev
+
     - name: Set up Python 3.9
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
-    - name: Directory and Depencies
+    - name: Install Python dependencies
       run: |
         cd utils
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-
 
     - name: Run Python Script
       env:
@@ -29,3 +38,4 @@ jobs:
       run: |
         cd utils
         python data.py
+
