@@ -14,6 +14,34 @@ cnxn = pyodbc.connect(
 
 cursor = cnxn.cursor()
 
+cursor.execute("""
+IF NOT EXISTS (
+    SELECT 1 
+    FROM INFORMATION_SCHEMA.TABLES 
+    WHERE TABLE_NAME = 'Cursos'
+)
+BEGIN
+    CREATE TABLE Cursos (
+        CodigoCurso NVARCHAR(50) NOT NULL,
+        NombreCurso NVARCHAR(255) NOT NULL,
+        Matriculados INT NOT NULL,
+        Aprobados INT NOT NULL,
+        Desaprobados INT NOT NULL,
+        Retiros INT NOT NULL,
+        Abandonos INT NOT NULL,
+        TotalLlevados INT NOT NULL,
+        CantidadConvalidados INT NOT NULL,
+        NotaMinima FLOAT NOT NULL,
+        NotaMaxima FLOAT NOT NULL,
+        Promedio FLOAT NOT NULL,
+        DesviacionEstandar FLOAT NOT NULL,
+        Semestre NVARCHAR(50) NOT NULL,
+        PRIMARY KEY (CodigoCurso, Semestre)
+    )
+END
+""")
+cnxn.commit()
+
 excel_files = [
     './Consolidado/Consolidado_semestre_2020-I.xlsx',
     './Consolidado/Consolidado_semestre_2020-II.xlsx',
@@ -27,7 +55,6 @@ excel_files = [
 for file in excel_files:
     df = pd.read_excel(file, sheet_name='Hoja2')
     
-    # Asegurarse de que CODIGO CURSO y ASIGNATURA sean leídos correctamente
     df['CodigoCurso'] = df['CODIGO CURSO'].astype(str)
     df['NombreCurso'] = df['ASIGNATURA'].astype(str)
     df['Matriculados'] = pd.to_numeric(df['MATRICULADOS'], downcast='integer')
@@ -43,10 +70,8 @@ for file in excel_files:
     df['DesviacionEstandar'] = pd.to_numeric(df['DESVIACIÓN ESTÁNDAR'].str.replace(',', '.'), errors='coerce').fillna(0.0)
     df['Semestre'] = df['SEMESTRE'].astype(str)
 
-    # Extraer semestre del nombre del archivo
     df['Semestre'] = file.split('_')[2].split('.')[0]
     
-    # Insertar en la base de datos
     for index, row in df.iterrows():
         cursor.execute("""
             INSERT INTO Cursos 
@@ -67,9 +92,8 @@ for file in excel_files:
                        row['DesviacionEstandar'],
                        row['Semestre']
                        )
-    # Guardar los cambios
     cnxn.commit()
 
-# Cerrar conexiones
 cursor.close()
 cnxn.close()
+
