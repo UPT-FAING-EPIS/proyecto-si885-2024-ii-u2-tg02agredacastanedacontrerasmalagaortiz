@@ -131,7 +131,7 @@ El estudiante es el actor que interactúa con el sistema para acceder a las esta
 **Diagrama de CU02 “Aplicar filtros a los gráficos”**
 <center>
 
-![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu02.png)
+![vistas_de_caso_de_uso_cu02](../media/vistas_de_caso_de_uso_cu02.png)
 </center>
 
 El estudiante selecciona filtros para personalizar los gráficos, como semestres, cursos, o indicadores académicos.
@@ -140,9 +140,19 @@ El estudiante selecciona filtros para personalizar los gráficos, como semestres
 **Diagrama de CU03 “Exportar reportes”**
 <center>
 
-![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu03.png)
+![vistas_de_caso_de_uso_cu03](../media/vistas_de_caso_de_uso_cu03.png)
 </center>
 
 El estudiante puede exportar los reportes generados en diferentes formatos.
+
+
+## 10. Vista de Datos <a id="10"></a>
+### 10.1 Diagrama Entidad Relación
+
+<center>
+
+![diagrama_er](../media/diagrama_er.png)
+</center>
+Este diagrama ER representa la tabla Cursos, que almacena información académica clave, como el código del curso, semestre, cantidad de matriculados, aprobados, desaprobados, retiros, abandonos y estadísticas como promedio y desviación estándar de notas. La clave primaria está compuesta por CodigoCurso y Semestre, lo que garantiza la unicidad de los registros por periodo académico.
 
 
