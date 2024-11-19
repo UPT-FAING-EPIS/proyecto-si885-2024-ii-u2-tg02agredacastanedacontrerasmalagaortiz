@@ -122,7 +122,7 @@ Gráfico 01: Esquema del organigrama de la Universidad Privada de Tacna.
 
 ## II. Visionamiento de la Empresa<a id="_Toc52661347"></a>
 #### 1. Descripción del Problema
-
+<ul style="text-align: justify;">
 
 En la actualidad, los estudiantes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Privada de Tacna (UPT) enfrentan diversos desafíos en la gestión de su rendimiento académico. Estos desafíos incluyen la falta de herramientas adecuadas para acceder a estadísticas detalladas sobre los cursos, la dificultad para tomar decisiones informadas basadas en datos claros y la ausencia de una plataforma centralizada para visualizar su progreso académico.
 
@@ -295,6 +295,8 @@ Durante el levantamiento de información para el desarrollo de PAMIS, se identif
    - **Requerimientos de los Docentes y Administradores:** Los docentes necesitan herramientas para monitorear el progreso de sus estudiantes y adaptar sus métodos de enseñanza según el rendimiento de cada curso. Asimismo, los administradores buscan optimizar la asignación de recursos mediante el análisis de tendencias de matrícula, tasas de aprobación y áreas críticas en el rendimiento estudiantil.
 
 La información obtenida durante el levantamiento confirma la necesidad y viabilidad de PAMIS como una solución para centralizar y optimizar el acceso a datos académicos, beneficiando tanto a estudiantes como al cuerpo docente y administrativo de la UPT.
+
+</ul>
 
 ## III. Análisis de Procesos<a id="_Toc52661348"></a>
 
