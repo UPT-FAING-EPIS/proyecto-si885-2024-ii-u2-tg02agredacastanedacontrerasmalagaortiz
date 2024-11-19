@@ -263,6 +263,18 @@ Durante el levantamiento de información para el desarrollo de PAMIS, se identif
 
 La información obtenida durante el levantamiento confirma la necesidad y viabilidad de PAMIS como una solución para centralizar y optimizar el acceso a datos académicos, beneficiando tanto a estudiantes como al cuerpo docente y administrativo de la UPT.
 
+## III. Análisis de Procesos<a id="1"></a>
+
+- Diagrama del Proceso Actual - Diagrama de actividades
+
+"El sistema actual no cuenta con un flujo definido para gestionar estadísticas académicas. PAMIS viene a estructurar y optimizar este proceso."
+
+- Diagrama del Proceso Propuesto - Diagrama de actividades Inicial
+
+![diagrama_actividades](../media/diagrama_actividades.png)
+
+El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
+
 
 ## V. Fases de Desarrollo<a id="1"></a>
 #### 1. Perfiles de Usuario
