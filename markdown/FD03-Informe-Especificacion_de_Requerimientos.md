@@ -26,7 +26,7 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# **Documento de Especidifcaciòn de Requerimientos**
+# **Documento de Especificación de Requerimientos**
 
 **Plataforma de análisis de datos de matriculados en la carrera de Ingeniería de Sistemas para la Universidad Privada de Tacna - PAMIS**
 
@@ -36,73 +36,70 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 | Versión | Hecha por | Revisada por | Aprobada por | Fecha      | Motivo           |
 | :-----: | --------- | ------------ | ------------ | ---------- | ---------------- |
-| 1.0     | JAR       | IME          | XOF          | 27/08/2024 | Versión Original |
+| 1.0     | CCC       | XOF          | JAR          | 15/11/2024 | Versión Original |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 
 ## **Índice General**
 
- [Introducción](#introducción)  
+1. [Introducción](#introducción)
 
-I. [**Generalidades de la Empresa**](#1)  
-   1. Nombre de la Empresa
-   2. Visión
-   3. Misión
-   4. Organigrama 
+2. [Generalidades de la Empresa](#_Toc52661346)  
+   2.1 Nombre de la Empresa  
+   2.2 Visión  
+   2.3 Misión  
+   2.4 Organigrama  
 
-II. [**Visionamiento de la Empresa**](#2)    
-   1. Descripción del Problema
-   2. Objetivos de Negocios
-   3. Objetivos de Diseño
-   4. Alcance del Proyecto
-   5. Viabilidad del Sistema
-      5.1. Viabilidad Técnica
-   6. Información obtenida del Levantamiento de Información
+3. [Visionamiento de la Empresa](#_Toc52661347)  
+   3.1 Descripción del Problema  
+   3.2 Objetivos de Negocios  
+   3.3 Objetivos de Diseño  
+   3.4 Alcance del Proyecto  
+   3.5 Viabilidad del Sistema  
+      3.5.1 Viabilidad Técnica  
+   3.6 Información obtenida del Levantamiento de Información  
 
-III. [**Análisis de Procesos**](#3)
+4. [Análisis de Procesos](#_Toc52661348)  
+   4.1 Diagrama del Proceso Actual - Diagrama de Actividades  
+   4.2 Diagrama del Proceso Propuesto - Diagrama de Actividades Inicial  
 
-   a) Diagrama del Proceso Actual - Diagrama de Actividades
-   
-   b) Diagrama del Proceso Propuesto - Diagrama de Actividades Inicial
+5. [Especificación de Requerimientos de Software](#_Toc52661349)  
+   5.1 Cuadro de Requerimientos Funcionales Inicial  
+   5.2 Cuadro de Requerimientos No Funcionales  
+   5.3 Cuadro de Requerimientos Funcionales Final  
+   5.4 Reglas de Negocio  
 
-IV. [**Especificación de Requerimientos de Software**](#4) 
+6. [Fases de Desarrollo](#_Toc52661350)  
+   6.1 Perfiles de Usuario  
+   6.2 Modelo Conceptual  
+      6.2.1 Diagrama de Paquetes  
+      6.2.2 Diagrama de Casos de Uso  
+      6.2.3 Escenarios de Caso de Uso (Narrativa)  
+   6.3 Modelo Lógico  
+      6.3.1 Análisis de Objetos  
+      6.3.2 Diagrama de Actividades con Objetos  
+      6.3.3 Diagrama de Secuencia  
+      6.3.4 Diagrama de Clases  
 
-   a) Cuadro de Requerimientos Funcionales Inicial
+7. [Conclusiones](#_Toc52661351)  
 
-   b) Cuadro de Requerimientos No Funcionales
-
-   c) Cuadro de Requerimientos Funcionales Final
-
-   d) Reglas de Negocio
-
-V. [**Fases de Desarrollo**](#5)   
-   1. Perfiles de Usuario
-   2. Modelo Conceptual
-
-      a) Diagrama de Paquetes
-
-      b) Diagrama de Casos de Uso 
-
-      c) Escenarios de Caso de Uso (Narrativa)
-
-   3. Modelo Lógico
-
-      a) Análisis de Objetos
-
-      b) Diagrama de Actividades con Objetos
-
-      c) Diagrama de Secuencia 
-
-      d) Diagrama de Clases
-
-[Conclusiones](#conclusiones)  
-[Recomendaciones](#recomendaciones)  
+8. [Recomendaciones](#_Toc52661352)  
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-## I. Generalidades de la Empresa <a id="1"></a>
+# **Documento de Especificación de Requerimientos**
+
+## I. Introducción <a id="introducción"></a>
+
+El presente documento de Especificación de Requerimientos de Software (SRS) detalla los requisitos funcionales y no funcionales necesarios para el desarrollo de la plataforma PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sistemas). Esta plataforma está diseñada para atender las necesidades de análisis académico de los estudiantes y personal docente de la Universidad Privada de Tacna (UPT), en particular de la Escuela Profesional de Ingeniería de Sistemas.
+PAMIS surge como una respuesta integral a los desafíos que enfrentan estudiantes y administradores para acceder a información precisa y detallada sobre el rendimiento académico y la evolución de la matrícula en la carrera de Ingeniería de Sistemas. En este contexto, PAMIS tiene como objetivo proporcionar un entorno de análisis de datos que permita a los estudiantes tomar decisiones informadas sobre su trayectoria académica, basadas en indicadores como tasas de aprobación, índices de deserción y comparaciones entre cohortes.
+La plataforma se enfocará en ofrecer una experiencia de usuario intuitiva y visualmente accesible mediante el uso de Power BI, brindando a los usuarios la capacidad de explorar los datos de manera interactiva. Con funcionalidades avanzadas de filtrado y personalización, PAMIS facilita el acceso a información académica relevante para el análisis individual y grupal, apoyando tanto la planificación personal de los estudiantes como la toma de decisiones institucionales.
+Este documento establece los objetivos de negocio y los lineamientos de diseño del proyecto, definiendo el alcance de PAMIS a través de sus funcionalidades principales e identificando las inclusiones y exclusiones que delimitan su desarrollo. Con esta especificación, se busca garantizar una comprensión clara y completa de los requisitos del sistema para lograr una implementación exitosa de la plataforma PAMIS.
+
+
+## I. Generalidades de la Empresa <a id="_Toc52661346"></a>
 ### 1. Nombre de la Empresa
 Universidad Privada de Tacna
 
