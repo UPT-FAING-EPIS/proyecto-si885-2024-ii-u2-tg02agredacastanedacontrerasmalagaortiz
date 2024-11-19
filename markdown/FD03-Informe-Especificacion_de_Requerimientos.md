@@ -307,7 +307,7 @@ La información obtenida durante el levantamiento confirma la necesidad y viabil
 
 ![diagrama_actividades](../media/diagrama_actividades.png)
 
-El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
+Diagrama 01: El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
 
 ## IV. Especificación de Requerimientos de Software<a id="_Toc52661349"></a>
 #### a. Cuadro de Requerimientos No Funcionales
@@ -366,29 +366,23 @@ El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, apli
 
 #### 2. Modelo Conceptual
 
-
-
 ### a) Diagrama de Paquetes
 
-**Diagrama de Paquetes de PAMIS**  
+**Diagrama de Paquetes de PAMIS**
+
 ![diagrama_de_paquete](../media/diagrama_de_paquete.png)
 
-El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
+Diagrama 02: El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
 
 ---
 
 ### b) Diagrama de Casos de Uso
 
 **Diagrama de Casos de Uso de la Plataforma en PowerBi**  
-*(diagrama)*
 
-El diagrama muestra cómo el *Estudiante* interactúa con el sistema PAMIS para:
+![casos-uso](../media/casos-uso.png)
 
-- Consultar estadísticas académicas
-- Aplicar filtros
-- Exportar reportes
-
-Este modelo destaca las principales funcionalidades disponibles para el usuario.
+Diagrama 03: El diagrama muestra cómo el Estudiante interactúa con el sistema PAMIS para Consultar estadísticas académicas, Aplicar filtros y Exportar reportes, destacando las principales funcionalidades disponibles para el usuario.
 
 ## c) Escenarios de Caso de Uso (narrativa)
 
@@ -445,13 +439,19 @@ Este modelo destaca las principales funcionalidades disponibles para el usuario.
 
 ![objeto_entidad](../media/objeto_entidad.png)
 
+Gráfico 02: Objetos entidad en el sistema PAMIS.
+
 ### Objetos Frontera 
 
 ![objeto_frontera](../media/objeto_frontera.png)
 
+Gráfico 03: Objetos frontera en el sistema PAMIS.
+
 ### Objetos Control 
 
 ![objeto_control](../media/objeto_control.png)
+
+Gráfico 04: Objetos control en el sistema PAMIS.
 
 ---
 
@@ -460,21 +460,24 @@ Este modelo destaca las principales funcionalidades disponibles para el usuario.
 ### Diagrama de Actividades CU01: "Consultar estadísticas académicas"  
 
 ![Actividades_CU01](../media/Actividades_CU01.png)  
-El diagrama muestra el proceso de interacción entre el estudiante y el sistema PAMIS para consultar estadísticas académicas. El estudiante accede a la plataforma, selecciona una sección de análisis, como "Análisis de Matrículas", y navega por los gráficos. El sistema responde mostrando las opciones disponibles, cargando los gráficos y permitiendo la interacción con los datos de manera dinámica.
+
+Diagrama 04: El diagrama muestra el proceso de interacción entre el estudiante y el sistema PAMIS para consultar estadísticas académicas. El estudiante accede a la plataforma, selecciona una sección de análisis, como "Análisis de Matrículas", y navega por los gráficos. El sistema responde mostrando las opciones disponibles, cargando los gráficos y permitiendo la interacción con los datos de manera dinámica.
 
 ---
 
 ### Diagrama de Actividades CU02: "Aplicar filtros a los gráficos"  
 
 ![Actividades_CU02](../media/Actividades_CU02.png)  
-Este diagrama de actividades representa el proceso para aplicar filtros a los gráficos en la plataforma PAMIS. El estudiante aplica un filtro inicial, como un semestre específico, y el sistema actualiza el gráfico para reflejar los datos correspondientes. Posteriormente, el estudiante agrega un segundo filtro, como un curso en particular, y el sistema combina ambos filtros y actualiza el gráfico de forma interactiva, completando el flujo.
+
+Diagrama 05: Este diagrama de actividades representa el proceso para aplicar filtros a los gráficos en la plataforma PAMIS. Donde el estudiante aplica un filtro inicial, como un semestre específico, y el sistema actualiza el gráfico para reflejar los datos correspondientes. Posteriormente, el estudiante agrega un segundo filtro, como un curso en particular, y el sistema combina ambos filtros y actualiza el gráfico de forma interactiva, completando el flujo.
 
 ---
 
 ### Diagrama de Actividades CU03: "Exportar reportes"  
 
-![Actividades_CU03](../media/Actividades_CU03.png)  
-El diagrama muestra cómo el estudiante exporta reportes en PAMIS. Selecciona un gráfico, elige "Exportar datos", define el tipo de datos y el formato (por ejemplo, XLSX). El sistema genera el archivo y lo descarga al dispositivo del estudiante.
+![Actividades_CU03](../media/Actividades_CU03.png) 
+
+Diagrama 06: El diagrama muestra cómo el estudiante exporta reportes en PAMIS. Selecciona un gráfico, elige "Exportar datos", define el tipo de datos y el formato (por ejemplo, XLSX). El sistema genera el archivo y lo descarga al dispositivo del estudiante.
 
 ---
 
@@ -483,28 +486,32 @@ El diagrama muestra cómo el estudiante exporta reportes en PAMIS. Selecciona un
 ### Diagrama de Secuencia de CU01: "Consultar estadísticas académicas"  
 
 ![Secuencia_CU01](../media/Secuencia_CU01.png)  
-El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
+
+Diagrama 07: El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
 
 ---
 
 ### Diagrama de Secuencia de CU02: "Aplicar filtros a los gráficos"  
 
 ![Secuencia_CU02](../media/Secuencia_CU02.png) 
-El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
+
+Diagrama 08: El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
 
 ---
 
 ### Diagrama de Secuencia de CU03: "Exportar reportes"  
 
 ![Secuencia_CU03](../media/Secuencia_CU03.png)  
-El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
+
+Diagrama 09: El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
 
 ---
 
 #### d) Diagrama de Clases  
 
 ![diagrama_clase](../media/diagrama_clase.png)  
-Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
+
+Diagrama 10: Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
 
 
 ## Conclusiones<a id="_Toc52661351"></a>
