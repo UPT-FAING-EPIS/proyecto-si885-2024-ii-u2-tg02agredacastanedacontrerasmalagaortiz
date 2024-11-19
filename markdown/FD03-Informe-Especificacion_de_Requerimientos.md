@@ -517,7 +517,7 @@ Diagrama 09: El diagrama muestra cómo el estudiante exporta un gráfico en form
 
 #### d) Diagrama de Clases  
 
-![diagrama_clase](../media/diagrama_clase.png)  
+![diagrama_clase](../media/diagrama_clase2.jpg)  
 
 Diagrama 10: Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
 
