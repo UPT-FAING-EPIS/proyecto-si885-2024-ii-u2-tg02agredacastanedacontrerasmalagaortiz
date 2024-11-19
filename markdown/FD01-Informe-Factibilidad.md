@@ -294,7 +294,7 @@ Se definieron los siguientes costos:
 
 <center>
 
-![costos-generales](../media/costos-generales.png)
+![costos-generales](../media/Costos-Generales.png)
 </center>
 
 <center>
@@ -315,7 +315,7 @@ Se definieron los siguientes costos:
 
 <center>
 
-![costos-ambientales](../media/costos-ambientales.png)
+![costos-ambientales](../media/Costos-Ambientales.png)
 </center>
 
 <center>
@@ -330,7 +330,7 @@ Se definieron los siguientes costos:
 
 <strong>Tabla 04:</strong> El Costo de Personal detallado muestra los días por mes, las horas por día y el pago por hora y día de todo el personal, finalizando con el total de su pago mensual.
 
-![costos-personal](../media/costos-personal.png)
+![costos-personal](../media/Costos-Personal.png)
 
 <strong>Tabla 05:</strong> El Costo de Personal muestra los salarios mensuales y totales de 2 meses para el desarrollo de PAMIS, con un costo total combinado de S/ 10,248.00
 
@@ -340,7 +340,7 @@ Se definieron los siguientes costos:
 
 <center>
 
-![costos-totales](../media/costos-totales.png)
+![costos-totales](../media/Costos-Totales.png)
 </center>
 
 <center>
