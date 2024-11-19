@@ -212,6 +212,66 @@ Este modelo destaca las principales funcionalidades disponibles para el usuario.
 | 7. Elige un formato, como "XLSX". | 8. Procesa la exportación y genera el archivo en el formato seleccionado. |
 | 9. Hace clic en el botón de descarga. | 10. Descarga el archivo al dispositivo del estudiante. |
 
+#### 3. Modelo Lógico
+
+### a) Análisis de Objetos
+
+### Objetos Entidad  
+*(diagrama)*
+
+### Objetos Frontera  
+*(diagrama)*
+
+### Objetos Control  
+*(diagrama)*
+
+---
+
+### b) Diagrama de Actividades con Objetos
+
+### Diagrama de Actividades CU01: "Consultar estadísticas académicas"  
+*(diagrama)*  
+El diagrama muestra el proceso de interacción entre el estudiante y el sistema PAMIS para consultar estadísticas académicas. El estudiante accede a la plataforma, selecciona una sección de análisis, como "Análisis de Matrículas", y navega por los gráficos. El sistema responde mostrando las opciones disponibles, cargando los gráficos y permitiendo la interacción con los datos de manera dinámica.
+
+---
+
+### Diagrama de Actividades CU02: "Aplicar filtros a los gráficos"  
+*(diagrama)*  
+Este diagrama de actividades representa el proceso para aplicar filtros a los gráficos en la plataforma PAMIS. El estudiante aplica un filtro inicial, como un semestre específico, y el sistema actualiza el gráfico para reflejar los datos correspondientes. Posteriormente, el estudiante agrega un segundo filtro, como un curso en particular, y el sistema combina ambos filtros y actualiza el gráfico de forma interactiva, completando el flujo.
+
+---
+
+### Diagrama de Actividades CU03: "Exportar reportes"  
+*(diagrama)*  
+El diagrama muestra cómo el estudiante exporta reportes en PAMIS. Selecciona un gráfico, elige "Exportar datos", define el tipo de datos y el formato (por ejemplo, XLSX). El sistema genera el archivo y lo descarga al dispositivo del estudiante.
+
+---
+
+#### c) Diagrama de Secuencia
+
+### Diagrama de Secuencia de CU01: "Consultar estadísticas académicas"  
+*(diagrama)*  
+El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
+
+---
+
+### Diagrama de Secuencia de CU02: "Aplicar filtros a los gráficos"  
+*(diagrama)*  
+El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
+
+---
+
+### Diagrama de Secuencia de CU03: "Exportar reportes"  
+*(diagrama)*  
+El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
+
+---
+
+#### d) Diagrama de Clases  
+*(diagrama)*  
+Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
+
+
 ## Conclusiones<a id="conclusiones"></a>
 
 + PAMIS permite centralizar y optimizar el análisis académico mediante herramientas interactivas que mejoran la toma de decisiones de estudiantes, docentes y administradores.
