@@ -304,3 +304,57 @@ El diagrama muestra cómo la Aplicación Web interactúa con el Servidor Backend
 Este diagrama ER representa la tabla Cursos, que almacena información académica clave, como el código del curso, semestre, cantidad de matriculados, aprobados, desaprobados, retiros, abandonos y estadísticas como promedio y desviación estándar de notas. La clave primaria está compuesta por CodigoCurso y Semestre, lo que garantiza la unicidad de los registros por periodo académico.
 
 
+## 11. Calidad <a id="10"></a>
+
+### 11.1. Escenario de Seguridad
+
+Como plataforma diseñada para manejar información académica sensible, incluyendo datos personales de estudiantes y docentes, es esencial que PAMIS esté protegida contra accesos no autorizados y amenazas potenciales. La seguridad garantiza que los usuarios confíen en la plataforma, proporcionando un entorno seguro para el análisis y la gestión de datos académicos. Los mecanismos de autenticación, autorización y encriptación están implementados para asegurar que solo personas con los permisos correspondientes accedan a la información, protegiendo la confidencialidad e integridad de los datos. PAMIS también incorpora un sistema de monitoreo de seguridad que permite detectar actividades sospechosas, fortaleciendo la respuesta ante posib
+
+   - **Fuente:** Usuarios de PAMIS.
+
+   - **Estimulo:** Realizar una acción de acceso o modificación en el sistema.
+
+   - **Entorno:** Plataforma PAMIS en condiciones operativas normales.
+
+   - **Artefacto:** Módulo de autenticación y autorización.
+
+   - **Respuesta:** PAMIS verifica la identidad y los permisos del usuario antes de ejecutar cualquier acción en la plataforma.
+
+   - **Medida de la Respuesta:** El usuario obtiene acceso restringido de acuerdo con su rol de forma inmediata, protegiendo la integridad de los datos.
+
+### 11.2. Escenario de Usabilidad
+
+La usabilidad de PAMIS se centra en ofrecer una experiencia de usuario clara e intuitiva, permitiendo que estudiantes, docentes y administradores naveguen fácilmente por la plataforma. PAMIS está diseñada pensando en los usuarios finales, proporcionando una interfaz gráfica limpia y de fácil acceso, alojada en PowerBI, que permite una rápida visualización de los datos y facilita el análisis académico. La optimización del tiempo de carga y la accesibilidad de los gráficos refuerzan la usabilidad de PAMIS, asegurando que cada usuario pueda acceder a la información necesaria sin barreras técnicas ni demoras.
+
+   - **Aprendizaje:** El usuario accede a la plataforma y encuentra de inmediato las opciones principales para visualizar los diferentes reportes (matriculación, desempeño académico, informes).
+
+   - **Eficiencia:** PAMIS permite seleccionar y visualizar datos académicos relevantes con unos pocos clics, y el proceso de consulta se realiza sin demoras perceptibles.
+
+   - **Memoria:** El sistema mantiene visible la información seleccionada para que el usuario pueda hacer cambios o revisiones sin perder datos previamente ingresados.
+
+   - **Errores:** PAMIS valida las entradas del usuario y detecta errores comunes, guiando al usuario para completarlos correctamente.
+
+
+### 11.3. Escenario de Adaptabilidad
+
+PAMIS es una plataforma modular y flexible, diseñada para adaptarse a las necesidades cambiantes del entorno académico. La adaptabilidad permite que la plataforma se expanda o modifique sin necesidad de reestructuraciones profundas, lo cual es esencial en el contexto educativo donde los requisitos y las necesidades de los usuarios evolucionan constantemente.
+
+   - **Fuente:** Cambios en las necesidades del entorno educativo.
+
+   - **Estimulo:** Requerimiento de una nueva funcionalidad o actualización en PAMIS.
+
+   - **Entorno:** Sistema académico en funcionamiento con requisitos cambiantes.
+
+   - **Artefacto:** Arquitectura modular de PAMIS.
+
+   - **Respuesta:** El sistema se adapta sin interrupciones, permitiendo la incorporación de nuevos módulos o actualizaciones.
+
+   - **Medida de la Respuesta:** La actualización se integra y está operativa en el menor tiempo posible sin afectar la funcionalidad existente.
+
+### 11.4. Escenario de Disponibilidad
+
+PAMIS opera de forma continua, brindando acceso a los usuarios las 24 horas del día, los 7 días de la semana. La plataforma cuenta con redundancia y planes de recuperación que aseguran la continuidad del servicio ante fallas. Además, es capaz de escalar horizontalmente para manejar aumentos en el número de usuarios, manteniendo la calidad del servicio y reduciendo tiempos de inactividad.
+
+
+
+### 11.5. Otro Escenario
