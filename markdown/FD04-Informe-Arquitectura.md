@@ -221,7 +221,7 @@ Diagrama de clases
 
 ![diagrama_clase](../media/diagrama_clase2.jpg)
 
-Diagrama 07: Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
+Diagrama 07: Este diagrama muestra la entidad Curso con sus atributos correspondientes y métodos para el cálculo estadístico de las notas
 
 </ul>
 
