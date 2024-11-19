@@ -149,6 +149,23 @@ PAMIS busca ofrecer una plataforma de tecnología que otorgue a los estudiantes 
 - **Soporte para Dispositivos Móviles:** PAMIS no ofrecerá soporte ni optimización para dispositivos móviles, enfocándose únicamente en entornos de escritorio a través de PowerBI.
 
 
+### 1.3 Definiciones, Siglas y Abreviaturas
+- **PAMIS:** Plataforma de Análisis de Matriculados en Ingeniería de Sistemas.
+- **UPT:** Universidad Privada de Tacna.
+- **EPIS:** Escuela profesional de ingeniería de sistemas.
+- **Análisis de datos:** Proceso de recopilación, limpieza, transformación y modelado de datos con el objetivo de descubrir patrones, tendencias y relaciones significativas.
+- **Interfaz de usuario:** Conjunto de elementos visuales y controles que permiten a un usuario interactuar con un software o aplicación. 
+
+### 1.4 Visión General
+<p style="text-align: justify;">
+El proyecto PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sistemas) tiene como objetivo principal desarrollar una herramienta analítica que permita a los estudiantes y docentes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Privada de Tacna obtener una comprensión profunda del desempeño académico de los alumnos que la conforman. Esta plataforma proporcionará un análisis detallado de datos de matrículas, rendimiento académico, tasas de aprobación y otros indicadores clave, facilitando la identificación de patrones y tendencias que puedan guiar la toma de decisiones estratégicas para mejorar la calidad y desempeño educativo de los estudiantes.
+</p>
+
+
+<p style="text-align: justify;">
+PAMIS está diseñada para ser una herramienta intuitiva y de fácil acceso, con una interfaz visual que permite a los usuarios explorar los datos de manera interactiva. La plataforma no solo permitirá la visualización clara de estos datos mediante gráficos y tablas, sino que también generará informes que ofrecerán recomendaciones basadas en análisis estadísticos. Estos informes ayudarán a los estudiantes a tomar decisiones informadas sobre el proceso educativo, optimizando los resultados académicos y contribuyendo al éxito general de los programas de ingeniería.
+</p>
+
 ## 4. Análisis de Requerimientos <a id="4"></a>
 ### 4.1 Requerimientos funcionales
 | **Código** | **Requerimiento**                     | **Descripción**                                                                                                                                                                                                                  |
