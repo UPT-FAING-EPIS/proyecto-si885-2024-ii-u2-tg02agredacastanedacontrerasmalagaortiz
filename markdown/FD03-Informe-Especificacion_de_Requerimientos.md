@@ -165,6 +165,53 @@ El diagrama muestra cómo el *Estudiante* interactúa con el sistema PAMIS para:
 
 Este modelo destaca las principales funcionalidades disponibles para el usuario.
 
+## c) Escenarios de Caso de Uso (narrativa)
+
+### Narrativa de CU01: “Consultar estadísticas académicas”
+
+| **Caso de Uso**            | Consultar estadísticas académicas (CU01)                                        |
+|-----------------------------|---------------------------------------------------------------------------------|
+| **Actores**                | Estudiante                                                                      |
+| **Descripción**            | Permitir a los estudiantes acceder directamente a la plataforma PAMIS y explorar diferentes secciones de análisis, cada una con gráficos interactivos que muestran información específica, como estadísticas de matrículas, desempeño académico, comparaciones entre cohortes e identificación de áreas críticas. |
+| **Precondiciones**         | El estudiante debe tener acceso a un dispositivo con conexión a la plataforma PAMIS. |
+| **Flujo Normal**           |                                                                                 |
+| **Acción del Actor**       | **Curso del Sistema**                                                           |
+| 1. Accede a la plataforma PAMIS desde su navegador. | 2. Muestra la pantalla principal con las secciones disponibles: Análisis de Matrículas, Desempeño Académico, Análisis Comparativo e Identificación de Áreas Críticas. |
+| 3. Selecciona una sección, como "Análisis de Matrículas". | 4. Carga y muestra los gráficos relacionados con las estadísticas de matrículas. |
+| 5. Navega por los gráficos y observa los datos mostrados. | 6. Permite interactuar con los gráficos, mostrando detalles específicos al pasar el cursor o hacer clic. |
+
+---
+
+### Narrativa de CU02: “Aplicar filtros a los gráficos”
+
+| **Caso de Uso**            | Aplicar filtros a los gráficos (CU02)                                           |
+|-----------------------------|---------------------------------------------------------------------------------|
+| **Actores**                | Estudiante                                                                      |
+| **Descripción**            | Permitir a los estudiantes personalizar los datos mostrados en los gráficos interactivos aplicando filtros específicos, como selección de semestres, cursos o indicadores académicos. |
+| **Precondiciones**         | El estudiante debe estar visualizando un gráfico en cualquiera de las secciones disponibles en la plataforma PAMIS. |
+| **Flujo Normal**           |                                                                                 |
+| **Acción del Actor**       | **Curso del Sistema**                                                           |
+| 1. Selecciona un gráfico dentro de una sección de análisis. | 2. Muestra el gráfico con los datos generales y las opciones de filtros disponibles. |
+| 3. Elige un filtro, como "Semestre: 2021-I". | 4. Actualiza el gráfico para reflejar los datos correspondientes al semestre seleccionado. |
+| 5. Selecciona un segundo filtro, como "Curso: Auditoría de Sistemas". | 6. Combina ambos filtros y actualiza el gráfico de manera interactiva. |
+
+---
+
+### Narrativa de CU03: “Exportar reportes”
+
+| **Caso de Uso**            | Exportar reportes (CU03)                                                        |
+|-----------------------------|---------------------------------------------------------------------------------|
+| **Actores**                | Estudiante                                                                      |
+| **Descripción**            | Permitir a los estudiantes exportar los reportes generados en la plataforma PAMIS en formatos XLSX o CSV, para su análisis y uso externo. |
+| **Precondiciones**         | El estudiante debe estar visualizando un gráfico o reporte en cualquier sección de la plataforma PAMIS. |
+| **Flujo Normal**           |                                                                                 |
+| **Acción del Actor**       | **Curso del Sistema**                                                           |
+| 1. Selecciona un gráfico dentro de una sección. | 2. Muestra el gráfico con la opción "Exportar datos". |
+| 3. Hace clic en la opción "Exportar datos". | 4. Muestra un cuadro de diálogo con las opciones de exportación: "Datos resumidos" o "Datos con diseño actual" (si aplicable). |
+| 5. Selecciona "Datos resumidos". | 6. Habilita los formatos disponibles para exportar: XLSX y CSV. |
+| 7. Elige un formato, como "XLSX". | 8. Procesa la exportación y genera el archivo en el formato seleccionado. |
+| 9. Hace clic en el botón de descarga. | 10. Descarga el archivo al dispositivo del estudiante. |
+
 ## Conclusiones<a id="conclusiones"></a>
 
 + PAMIS permite centralizar y optimizar el análisis académico mediante herramientas interactivas que mejoran la toma de decisiones de estudiantes, docentes y administradores.
