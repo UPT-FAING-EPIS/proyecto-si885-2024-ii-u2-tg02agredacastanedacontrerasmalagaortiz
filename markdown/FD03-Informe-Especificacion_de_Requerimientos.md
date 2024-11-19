@@ -123,6 +123,7 @@ Gráfico 01: Esquema del organigrama de la Universidad Privada de Tacna.
 ## II. Visionamiento de la Empresa<a id="_Toc52661347"></a>
 #### 1. Descripción del Problema
 
+
 En la actualidad, los estudiantes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Privada de Tacna (UPT) enfrentan diversos desafíos en la gestión de su rendimiento académico. Estos desafíos incluyen la falta de herramientas adecuadas para acceder a estadísticas detalladas sobre los cursos, la dificultad para tomar decisiones informadas basadas en datos claros y la ausencia de una plataforma centralizada para visualizar su progreso académico.
 
 - **Falta de acceso a información académica personalizada:** La escuela dispone de un sistema administrativo que gestiona las estadísticas académicas a nivel institucional. Sin embargo, los estudiantes no tienen acceso directo a una plataforma que les permita visualizar de manera clara y personalizada datos como tasas de aprobación, índices de deserción y distribución de calificaciones en los cursos que les interesan. Esto limita su capacidad para evaluar y planificar su trayectoria académica de manera efectiva.
@@ -299,13 +300,20 @@ La información obtenida durante el levantamiento confirma la necesidad y viabil
 
 - Diagrama del Proceso Actual - Diagrama de actividades
 
+<ul style="text-align: justify;">
    "El sistema actual no cuenta con un flujo definido para gestionar estadísticas académicas. PAMIS viene a estructurar y optimizar este proceso."
+</ul>
 
 - Diagrama del Proceso Propuesto - Diagrama de actividades Inicial
 
-![diagrama_actividades](../media/diagrama_actividades.png)
+<ul style="text-align: justify;">
 
+![diagrama_actividades](../media/diagrama_actividades.png)
+</ul>
+
+<ul style="text-align: justify;">
 Diagrama 01: El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
+</ul>
 
 ## IV. Especificación de Requerimientos de Software<a id="_Toc52661349"></a>
 #### a. Cuadro de Requerimientos No Funcionales
