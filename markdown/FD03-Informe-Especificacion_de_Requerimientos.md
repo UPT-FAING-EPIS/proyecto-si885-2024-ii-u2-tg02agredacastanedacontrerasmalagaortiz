@@ -122,6 +122,49 @@ Administradores: Nivel superior compuesto por directores de escuela y coordinado
 
 Estudiantes: En el nivel base, los usuarios principales de PAMIS, quienes acceden a la plataforma para evaluar su rendimiento, identificar áreas de mejora y tomar decisiones informadas sobre su trayectoria académica.
 
+### 5. Fases de Desarrollo</h2>
+
+#### 1. Perfiles de Usuario
+
+<ul style="text-align: justify;">
+    <li><strong>Administradores:</strong><p style="text-align: justify;">
+    Es el responsable de supervisar y gestionar toda la información del sistema. Tiene acceso completo para actualizar datos académicos, generar reportes completos y brindar soporte técnico. Además, se encarga del mantenimiento del sistema y de asegurar su correcto funcionamiento. Requiere conocimientos técnicos en herramientas como Power BI y habilidades para manejar datos y resolver problemas del sistema.
+    </p>
+
+ </li>
+    <li><strong>Estudiantes:</strong><p style="text-align: justify;">
+    Es el usuario final que interactúa con la plataforma para consultar datos académicos agregados y segmentados. Puede explorar estadísticas generales de la población estudiantil, como tasas de aprobación o índices de deserción, pero no puede acceder a información específica de otros estudiantes ni visualizar su propio rendimiento. Este perfil está diseñado para analizar tendencias académicas globales y no personalizadas.
+    </p>
+
+ </li>
+</ul>
+
+#### 2. Modelo Conceptual
+
+
+
+### a) Diagrama de Paquetes
+
+**Diagrama de Paquetes de PAMIS**  
+![diagrama_de_paquete](../media/diagrama_de_paquete.png)
+
+El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
+
+---
+
+### b) Diagrama de Casos de Uso
+
+**Diagrama de Casos de Uso de la Plataforma en PowerBi**  
+*(diagrama)*
+
+El diagrama muestra cómo el *Estudiante* interactúa con el sistema PAMIS para:
+
+- Consultar estadísticas académicas
+- Aplicar filtros
+- Exportar reportes
+
+Este modelo destaca las principales funcionalidades disponibles para el usuario.
+
 ## Conclusiones<a id="conclusiones"></a>
 
 + PAMIS permite centralizar y optimizar el análisis académico mediante herramientas interactivas que mejoran la toma de decisiones de estudiantes, docentes y administradores.
