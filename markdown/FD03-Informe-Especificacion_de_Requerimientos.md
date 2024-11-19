@@ -94,10 +94,12 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 ## I. Introducción <a id="introducción"></a>
 
 El presente documento de Especificación de Requerimientos de Software (SRS) detalla los requisitos funcionales y no funcionales necesarios para el desarrollo de la plataforma PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sistemas). Esta plataforma está diseñada para atender las necesidades de análisis académico de los estudiantes y personal docente de la Universidad Privada de Tacna (UPT), en particular de la Escuela Profesional de Ingeniería de Sistemas.
-PAMIS surge como una respuesta integral a los desafíos que enfrentan estudiantes y administradores para acceder a información precisa y detallada sobre el rendimiento académico y la evolución de la matrícula en la carrera de Ingeniería de Sistemas. En este contexto, PAMIS tiene como objetivo proporcionar un entorno de análisis de datos que permita a los estudiantes tomar decisiones informadas sobre su trayectoria académica, basadas en indicadores como tasas de aprobación, índices de deserción y comparaciones entre cohortes.
-La plataforma se enfocará en ofrecer una experiencia de usuario intuitiva y visualmente accesible mediante el uso de Power BI, brindando a los usuarios la capacidad de explorar los datos de manera interactiva. Con funcionalidades avanzadas de filtrado y personalización, PAMIS facilita el acceso a información académica relevante para el análisis individual y grupal, apoyando tanto la planificación personal de los estudiantes como la toma de decisiones institucionales.
-Este documento establece los objetivos de negocio y los lineamientos de diseño del proyecto, definiendo el alcance de PAMIS a través de sus funcionalidades principales e identificando las inclusiones y exclusiones que delimitan su desarrollo. Con esta especificación, se busca garantizar una comprensión clara y completa de los requisitos del sistema para lograr una implementación exitosa de la plataforma PAMIS.
 
+PAMIS surge como una respuesta integral a los desafíos que enfrentan estudiantes y administradores para acceder a información precisa y detallada sobre el rendimiento académico y la evolución de la matrícula en la carrera de Ingeniería de Sistemas. En este contexto, PAMIS tiene como objetivo proporcionar un entorno de análisis de datos que permita a los estudiantes tomar decisiones informadas sobre su trayectoria académica, basadas en indicadores como tasas de aprobación, índices de deserción y comparaciones entre cohortes.
+
+La plataforma se enfocará en ofrecer una experiencia de usuario intuitiva y visualmente accesible mediante el uso de Power BI, brindando a los usuarios la capacidad de explorar los datos de manera interactiva. Con funcionalidades avanzadas de filtrado y personalización, PAMIS facilita el acceso a información académica relevante para el análisis individual y grupal, apoyando tanto la planificación personal de los estudiantes como la toma de decisiones institucionales.
+
+Este documento establece los objetivos de negocio y los lineamientos de diseño del proyecto, definiendo el alcance de PAMIS a través de sus funcionalidades principales e identificando las inclusiones y exclusiones que delimitan su desarrollo. Con esta especificación, se busca garantizar una comprensión clara y completa de los requisitos del sistema para lograr una implementación exitosa de la plataforma PAMIS.
 
 ## I. Generalidades de la Empresa <a id="_Toc52661346"></a>
 ### 1. Nombre de la Empresa
@@ -120,7 +122,7 @@ Administradores: Nivel superior compuesto por directores de escuela y coordinado
 Estudiantes: En el nivel base, los usuarios principales de PAMIS, quienes acceden a la plataforma para evaluar su rendimiento, identificar áreas de mejora y tomar decisiones informadas sobre su trayectoria académica.
 
 
-## II. Visionamiento de la Empresa<a id="1"></a>
+## II. Visionamiento de la Empresa<a id="_Toc52661347"></a>
 #### 1. Descripción del Problema
 
 En la actualidad, los estudiantes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Privada de Tacna (UPT) enfrentan diversos desafíos en la gestión de su rendimiento académico. Estos desafíos incluyen la falta de herramientas adecuadas para acceder a estadísticas detalladas sobre los cursos, la dificultad para tomar decisiones informadas basadas en datos claros y la ausencia de una plataforma centralizada para visualizar su progreso académico.
@@ -260,7 +262,7 @@ Durante el levantamiento de información para el desarrollo de PAMIS, se identif
 
 La información obtenida durante el levantamiento confirma la necesidad y viabilidad de PAMIS como una solución para centralizar y optimizar el acceso a datos académicos, beneficiando tanto a estudiantes como al cuerpo docente y administrativo de la UPT.
 
-## III. Análisis de Procesos<a id="1"></a>
+## III. Análisis de Procesos<a id="_Toc52661348"></a>
 
 - Diagrama del Proceso Actual - Diagrama de actividades
 
@@ -273,7 +275,7 @@ La información obtenida durante el levantamiento confirma la necesidad y viabil
 El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
 
 
-## V. Fases de Desarrollo<a id="1"></a>
+## V. Fases de Desarrollo<a id="_Toc52661350"></a>
 #### 1. Perfiles de Usuario
 
 <ul style="text-align: justify;">
@@ -432,13 +434,13 @@ El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CS
 Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
 
 
-## Conclusiones<a id="conclusiones"></a>
+## Conclusiones<a id="_Toc52661351"></a>
 
 + PAMIS permite centralizar y optimizar el análisis académico mediante herramientas interactivas que mejoran la toma de decisiones de estudiantes, docentes y administradores.
 + La plataforma resuelve la falta de acceso a estadísticas académicas detalladas, proporcionando gráficos dinámicos y opciones de filtrado que facilitan la exploración de datos relevantes.
 + La integración de Power BI garantiza una experiencia de usuario intuitiva y accesible, reduciendo la carga administrativa y aumentando la eficiencia en la planificación académica.
 
-## Recomendaciones<a id="recomendaciones"></a>
+## Recomendaciones<a id="_Toc52661352"></a>
 + Ampliar el alcance de PAMIS para incluir otras carreras profesionales, potenciando su utilidad en toda la universidad.
 + Incorporar soporte para dispositivos móviles para aumentar la accesibilidad de la plataforma.
 + Realizar actualizaciones continuas basadas en el feedback de los usuarios para mejorar la experiencia y funcionalidad del sistema.
