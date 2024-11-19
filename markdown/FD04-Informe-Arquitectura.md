@@ -93,6 +93,24 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+
+<h2 id="1">1. Introducción </h2>
+
+<p style="text-align: justify;">
+    El presente Documento de Arquitectura de Software para PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sistemas) tiene como objetivo principal proporcionar una visión clara sobre las tasas de matriculación y su evolución a lo largo del tiempo para identificar tendencias y patrones de inscripción. PAMIS no es solo una plataforma tecnológica; es una iniciativa estratégica diseñada para abordar varios desafíos en la gestión de su rendimiento académico de los estudiantes de la Escuela Profesional de Ingeniería de Sistemas. 
+</p>
+
+<p style="text-align: justify;">
+    Este documento se centra en ofrecer una guía clara y comprensible para todos los desarrolladores y partes interesadas, detallando la organización del proyecto, los datos y gráficos involucrados, así como las interacciones dinámicas entre ellos. Se incluyen diagramas que especifican los métodos y procesos críticos del sistema, asegurando que cada elemento del sistema esté bien documentado y sea fácil de entender.
+</p>
+<p style="text-align: justify;">
+    A lo largo del documento, se abordarán los siguientes puntos clave: la estructura del proyecto, incluyendo la organización de los gráficos y sus relaciones con los datos proporcionados, detallando los principales elementos del sistema, su propósito y cómo interactúan entre sí; mostrando un listado de las herramientas utilizadas, y el entorno en el que se construye y despliega el sistema; y diagramas detallados, incluyendo diagramas de secuencia y otros diagramas UML que ilustran las interacciones entre los datos y sus respectivos gráficos, especificando los métodos y flujos de datos más importantes.
+</p>
+<p style="text-align: justify;">
+    Con una visión comprensiva de PAMIS y su arquitectura, este documento simplifica la colaboración y el entendimiento entre todos los miembros del equipo de desarrollo. El objetivo es asegurar que el proyecto se implemente de manera efectiva y eficiente, cumpliendo con todos los requisitos y objetivos establecidos, y ofreciendo una plataforma robusta y fácil de usar para los estudiantes.
+</p>
+
+
 ## 4. Análisis de Requerimientos <a id="4"></a>
 ### 4.1 Requerimientos funcionales
 | **Código** | **Requerimiento**                     | **Descripción**                                                                                                                                                                                                                  |
