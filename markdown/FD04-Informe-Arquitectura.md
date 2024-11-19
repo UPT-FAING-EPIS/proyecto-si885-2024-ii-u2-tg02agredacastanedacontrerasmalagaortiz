@@ -170,6 +170,7 @@ PAMIS está diseñada para ser una herramienta intuitiva y de fácil acceso, con
 ## 2. Representación Arquitectónica <a id="2"></a>
 
 ### 2.1. Escenarios
+<ul style="text-align: justify;">
 
 Diagrama de Casos de Uso de la plataforma en PowerBi
 
@@ -221,6 +222,8 @@ Diagrama de clases
 ![diagrama_clase](../media/diagrama_clase.png)
 
 Diagrama 07: Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
+
+</ul>
 
 ## 3. Objetivos y Limitaciones Arquitectónicas <a id="3"></a>
 ### 3.1 Disponibilidad
