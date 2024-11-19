@@ -166,6 +166,7 @@ Los objetivos de diseño de PAMIS se centran en crear una interfaz accesible y 	
 #### 4. Alcance del proyecto
 
 **Inclusiones:**
+
 Desarrollo de una Aplicación en PowerBI:
 
 - Creación de un dashboard interactivo en PowerBI que facilite la exploración visual de los datos académicos.
@@ -210,25 +211,59 @@ Soporte Tecnológico:
 **Software**
 
 - **Aplicaciones y Herramientas de Desarrollo:**
-   - **Visual Studio Code:** Es el IDE principal para el desarrollo del proyecto, siendo compatible con los sistemas operativos Windows y macOS, ofreciendo extensiones que personalizan el entorno de trabajo.
 
-   - **Power BI:** Esta herramienta es para la creación de dashboard y visualizaciones de datos interactivos.
+  - *Visual Studio Code:* Es el IDE principal para el desarrollo del proyecto, siendo compatible con los sistemas operativos Windows y macOS, ofreciendo extensiones que personalizan el entorno de trabajo.
+  
+  - *Terraform:* Utilizado para la creación y gestión automatizada de la infraestructura en Azure, asegurando consistencia y escalabilidad.
 
-   - **Sistemas Operativos:** Pueden funcionar bajo Windows y macOS.
+  - *Power BI:* Herramienta es para la creación de dashboards y visualizaciones de datos interactivos, además de ser poderosa para los análisis de datos.
 
+  - *Azure Data Factory:* Implementado para gestionar pipelines de datos automatizados que integran y transforman información desde las fuentes hacia el almacén de datos.
+
+  - *Azure Synapse Analytics:* Utilizado como almacén de datos centralizado y para realizar análisis avanzados en grandes volúmenes de datos.
+
+  - *Azure DevOps:* Plataforma para la gestión de repositorios, pipelines de CI/CD y control de versiones de los artefactos generados.
+
+  - *Azure SQL Database:* Base de datos transaccional utilizada para la gestión de datos académicos.
+
+  
 - **Navegadores Web:** La plataforma debe ser compatible con los navegadores web más conocidos y utilizados tales como Google Chrome, Mozilla Firefox, Microsoft Edge, etc.
+
+**Infraestructura en la Nube**
+
+- **Grupo de Recursos:** Contenedor lógico llamado inteligencia-negocios, que organiza todos los recursos relacionados en la ubicación East US.
+
+- **Azure SQL Server:** Servidor principal para alojar la base de datos SQL, donde las credenciales son gestionadas de forma segura mediante Azure Key Vault. (Versión utilizada: SQL Server 12.0.)
+
+- **Azure SQL Database:** Base de datos llamada CICLO_UNIVERSITARIO, con una capacidad de hasta 32 GB de almacenamiento, una capacidad minima de 0.5 vCores para ahorrar costos cuando está inactiva y cuenta con una auto-pausa que se activa tras 60 minutos de inactividad.
+
+- **Azure Data Factory:** Automatización de procesos ETL para cargar y transformar datos desde sistemas de origen hacia Azure SQL Database y Synapse Analytics.
+
+- **Azure Synapse Analytics:** Almacén de datos centralizado para integrar y analizar grandes volúmenes de información académica. Optimizado para consultas analíticas rápidas conectadas a Power BI.
+
+- **Terraform:** Infraestructura definida como código para garantizar consistencia y despliegue automatizado de recursos en Azure.
+
+- **Azure Key Vaul:** Gestión segura de credenciales y secretos, como contraseñas y claves de acceso, utilizadas en los diferentes servicios de Azure.
+
+- **Azure DevOps:** Pipelines de CI/CD configurados para despliegues automatizados y gestión de versiones de artefactos generados.
+
+**Automatización**
+
+La creación y el despliegue de los recursos en Azure se gestionan mediante Terraform, lo que asegura que los entornos de desarrollo, pruebas y producción se configuren de forma uniforme.
+
+Los pipelines de CI/CD en Azure DevOps integran los artefactos generados, como scripts SQL, configuraciones de Data Factory y dashboards de Power BI, garantizando actualizaciones consistentes y seguras.
 
 **Infraestructura de Red**
 
-- **Conexion a Internet:** Una conexión de alta velocidad es de gran importancia, más aún con una arquitectura de nube o con servidores externos que aseguren la disponibilidad de la plataforma.
+- **Conexión a Internet:** <p style="text-align: justify;">Una conexión a internet de alta velocidad es esencial para garantizar la disponibilidad y el acceso continuo a los servicios en la nube. Esto es especialmente crítico para la operación de Azure Data Factory y las consultas en tiempo real hacia Azure Synapse Analytics.
+</p>
 
 
 ##### 5.2. Viabilidad Economica
 
-![tipos_costo](../media/tipos_costo.png)
+![costos-totales](../media/Costos-Totales.png)
 
-En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 10,533.00
-
+Tabla 01: En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 11,695.80
 
 ##### 5.3. Viabilidad Operativa
 
@@ -266,7 +301,7 @@ La información obtenida durante el levantamiento confirma la necesidad y viabil
 
 - Diagrama del Proceso Actual - Diagrama de actividades
 
-"El sistema actual no cuenta con un flujo definido para gestionar estadísticas académicas. PAMIS viene a estructurar y optimizar este proceso."
+   "El sistema actual no cuenta con un flujo definido para gestionar estadísticas académicas. PAMIS viene a estructurar y optimizar este proceso."
 
 - Diagrama del Proceso Propuesto - Diagrama de actividades Inicial
 
@@ -274,6 +309,44 @@ La información obtenida durante el levantamiento confirma la necesidad y viabil
 
 El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
 
+## IV. Especificación de Requerimientos de Software<a id="_Toc52661349"></a>
+#### a. Cuadro de Requerimientos No Funcionales
+
+| **Código** | **Requerimiento**                        | **Descripción**                                                                                                                                              |
+|------------|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF-01      | Usabilidad                               | La interfaz de usuario debe ser intuitiva y accesible, permitiendo que usuarios con distintos niveles de experiencia técnica puedan navegar, visualizar datos y generar reportes sin dificultades. |
+| RF-02      | Disponibilidad y Fiabilidad              | La plataforma debe estar disponible el 99.5% del tiempo, excluyendo períodos de mantenimiento programado.                                                     |
+| RF-03      | Seguridad de Datos                       | La plataforma debe cumplir con la Ley de Protección de Datos Personales en Perú, asegurando la confidencialidad y privacidad de los datos académicos y personales de los estudiantes. |
+| RF-04      | Compatibilidad                           | La plataforma debe ser accesible desde entornos de escritorio, funcionando en sistemas operativos Windows y macOS, y ser compatible con los navegadores más utilizados (Google Chrome, Mozilla Firefox, Microsoft Edge). |
+| RF-05      | Recuperación Rápida ante Fallos e Interrupciones | La plataforma debe recuperarse de manera muy rápida frente a fallos e interrupciones.                                                                          |
+| RF-06      | Interactividad y Visualización de Datos  | La plataforma debe permitir una visualización precisa y flexible, con filtros personalizables y segmentación de datos aplicable en un 95% de las consultas realizadas. |
+
+<br>
+
+#### b. Cuadro de Requerimientos Funcionales
+
+| **Código** | **Requerimiento**                        | **Descripción**                                                                                                                                              |
+|------------|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF-01      | Dashboard Interactivo                               | La plataforma debe proporcionar un dashboard interactivo en Power BI que permita a los usuarios (estudiantes, docentes y administradores) acceder a estadísticas detalladas de matrícula, rendimiento académico y otros indicadores clave. |
+| RF-02      | Visualización de Estadísticas Académicas              | La plataforma debe mostrar datos sobre tasas de aprobación, índices de deserción, calificaciones máximas y mínimas, y rendimiento por curso. Los usuarios deben poder visualizar estos datos mediante gráficos, tablas y reportes que faciliten la comprensión de la información. |
+| RF-03      | Análisis Comparativo                       | La plataforma debe permitir comparaciones de rendimiento académico entre diferentes cohortes de estudiantes para identificar tendencias y patrones a lo largo del tiempo. |
+| RF-04      | Identificacion de Areas Criticas                           | La plataforma debe identificar y destacar los cursos o áreas académicas con altos índices de desaprobación, ayudando a la administración y a los docentes a implementar estrategias de mejora. |
+| RF-05      | Exportación de Reportes | La plataforma debe incluir funcionalidades para que los usuarios puedan exportar reportes en formatos PDF y Excel, permitiendo un análisis posterior fuera de la plataforma. |
+| RF-06      | Filtros y Segmentación  | La plataforma debe permitir que los usuarios apliquen filtros y segmentan los datos en función de criterios específicos, como curso, semestre, año académico y docente. |
+| RF-07      | Generación de Recomendaciones Académicas  | La plataforma debe ofrecer recomendaciones y análisis predictivos basados en datos históricos, apoyando a los estudiantes en la toma de decisiones informadas sobre su trayectoria académica. |
+
+<br>
+
+#### c. Reglas de Negocio
+
+| **Código** | **Requerimiento**                        | **Descripción**                                                                                                                                              |
+|------------|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Proteccion de Datos Personales      | PAMIS cumple con la Ley de Protección de Datos Personales de Perú, asegurando la confidencialidad de los datos de los estudiantes mediante encriptación y autenticación de usuarios. | UPT |
+| Frecuencia de Actualización de Datos | Los datos académicos deben actualizarse al final de cada ciclo académico o en fechas específicas establecidas por la UPT para reflejar información precisa. | UPT |
+| Normativa de Exportación de Datos | Los reportes exportados deben incluir una nota de confidencialidad. Estudiantes y docentes pueden exportar datos propios; administradores, datos agregados. | UPT |
+| Criterios para Identificación de Áreas Críticas | Un curso es considerado "área crítica" si tiene una tasa de desaprobación superior al 30% o una caída en el rendimiento en tres ciclos consecutivos. | UPT |
+| Política de Personalización y Filtros de Datos | Estudiantes y docentes pueden aplicar filtros para analizar datos, pero no pueden alterar ni comparar datos personales sin autorización. | UPT |
+| Política de Mantenimiento y Actualización | Las actualizaciones del sistema deben realizarse fuera de horario académico y estar aprobadas por la administración de la UPT.  | UPT |
 
 ## V. Fases de Desarrollo<a id="_Toc52661350"></a>
 #### 1. Perfiles de Usuario
