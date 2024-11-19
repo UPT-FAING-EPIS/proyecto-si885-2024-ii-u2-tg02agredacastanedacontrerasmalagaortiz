@@ -93,6 +93,30 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+## 4. Análisis de Requerimientos <a id="4"></a>
+### 4.1 Requerimientos funcionales
+| **Código** | **Requerimiento**                     | **Descripción**                                                                                                                                                                                                                  |
+|------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF-01      | Dashboard Interactivo                | La plataforma debe proporcionar un dashboard interactivo en Power BI que permita a los usuarios (estudiantes, docentes y administradores) acceder a estadísticas detalladas de matrícula, rendimiento académico y otros indicadores clave. |
+| RF-02      | Visualización de Estadísticas Académicas | La plataforma debe mostrar datos sobre tasas de aprobación, índices de deserción, calificaciones máximas y mínimas, y rendimiento por curso. Los usuarios deben poder visualizar estos datos mediante gráficos, tablas y reportes que faciliten la comprensión de la información. |
+| RF-03      | Análisis Comparativo                 | La plataforma debe permitir comparaciones de rendimiento académico entre diferentes cohortes de estudiantes para identificar tendencias y patrones a lo largo del tiempo.                                                          |
+| RF-04      | Identificación de Áreas Críticas     | La plataforma debe identificar y destacar los cursos o áreas académicas con altos índices de desaprobación, ayudando a la administración y a los docentes a implementar estrategias de mejora.                                     |
+| RF-05      | Exportación de Reportes             | La plataforma debe incluir funcionalidades para que los usuarios puedan exportar reportes en formatos PDF y Excel, permitiendo un análisis posterior fuera de la plataforma.                                                       |
+| RF-06      | Filtros y Segmentación              | La plataforma debe permitir que los usuarios apliquen filtros y segmenten los datos en función de criterios específicos, como curso, semestre, año académico y docente.                                                            |
+| RF-07      | Generación de Recomendaciones Académicas | La plataforma debe ofrecer recomendaciones y análisis predictivos basados en datos históricos, apoyando a los estudiantes en la toma de decisiones informadas sobre su trayectoria académica.                                      |
+
+### 4.2 Requerimientos no funcionales
+
+| **Código** | **Requerimiento**                  | **Descripción**                                                                                                                                                                              |
+|------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| RF-01      | Usabilidad                         | La interfaz de usuario debe ser intuitiva y accesible, permitiendo que usuarios con distintos niveles de experiencia técnica puedan navegar, visualizar datos y generar reportes sin dificultades. |
+| RF-02      | Disponibilidad y Fiabilidad        | La plataforma debe estar disponible el 99.5% del tiempo, excluyendo períodos de mantenimiento programado.                                                                                     |
+| RF-03      | Seguridad de Datos                 | La plataforma debe cumplir con la Ley de Protección de Datos Personales en Perú, asegurando la confidencialidad y privacidad de los datos académicos y personales de los estudiantes.           |
+| RF-04      | Compatibilidad                     | La plataforma debe ser accesible desde entornos de escritorio, funcionando en sistemas operativos Windows y macOS, y ser compatible con los navegadores más utilizados (Google Chrome, Mozilla Firefox, Microsoft Edge). |
+| RF-05      | Recuperación Rápida ante Fallos e Interrupciones | La plataforma debe de recuperarse de manera muy rápida frente a fallos e interrupciones.                                                                                                     |
+| RF-06      | Interactividad y Visualización de Datos | La plataforma debe permitir una visualización precisa y flexible, con filtros personalizables y segmentación de datos aplicable en un 95% de las consultas realizadas.                        |
+
+
 ## 5. Vistas de Caso de Uso <a id="5"></a>
 **Escenarios de Caso de Uso de la aplicación “PAMIS”**
 
