@@ -93,4 +93,32 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+## 5. Vistas de Caso de Uso <a id="5"></a>
+**Escenarios de Caso de Uso de la aplicación “PAMIS”**
+
+**Diagrama de CU01 “Consultar estadísticas académicas”**
+<center>
+
+![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu01.png)
+</center>
+
+El estudiante es el actor que interactúa con el sistema para acceder a las estadísticas académicas
+
+**Diagrama de CU02 “Aplicar filtros a los gráficos”**
+<center>
+
+![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu02.png)
+</center>
+
+El estudiante selecciona filtros para personalizar los gráficos, como semestres, cursos, o indicadores académicos.
+
+
+**Diagrama de CU03 “Exportar reportes”**
+<center>
+
+![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu03.png)
+</center>
+
+El estudiante puede exportar los reportes generados en diferentes formatos.
+
 
