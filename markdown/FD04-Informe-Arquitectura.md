@@ -167,7 +167,7 @@ El proyecto PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sis
 PAMIS está diseñada para ser una herramienta intuitiva y de fácil acceso, con una interfaz visual que permite a los usuarios explorar los datos de manera interactiva. La plataforma no solo permitirá la visualización clara de estos datos mediante gráficos y tablas, sino que también generará informes que ofrecerán recomendaciones basadas en análisis estadísticos. Estos informes ayudarán a los estudiantes a tomar decisiones informadas sobre el proceso educativo, optimizando los resultados académicos y contribuyendo al éxito general de los programas de ingeniería.
 </p>
 
-## 2. Representación Arquitectónica <a id="4"></a>
+## 2. Representación Arquitectónica <a id="2"></a>
 
 ### 2.1. Escenarios
 
@@ -175,8 +175,7 @@ Diagrama de Casos de Uso de la plataforma en PowerBi
 
 ![diagrama_caso_uso](../media/diagrama_caso_uso.png)
 
-El diagrama muestra cómo el Estudiante interactúa con el sistema PAMIS para Consultar estadísticas académicas, Aplicar filtros y Exportar reportes, destacando las principales funcionalidades disponibles para el usuario.
-
+Diagrama 01: El diagrama muestra cómo el Estudiante interactúa con el sistema PAMIS para Consultar estadísticas académicas, Aplicar filtros y Exportar reportes, destacando las principales funcionalidades disponibles para el usuario.
 
 ### 2.2. Vista Logica
 
@@ -184,8 +183,7 @@ Componentes del Sistema de Análisis Académico en Power BI PAMIS
 
 ![componentes_sistema](../media/componentes_sistema.png)
 
-Este diagrama proporciona una vista más detallada de los componentes del proyecto, facilitando la comprensión de su estructura y organización.
-
+Diagrama 02: Este diagrama proporciona una vista más detallada de los componentes del proyecto, facilitando la comprensión de su estructura y organización.
 
 ### 2.3. Vista del Proceso
 
@@ -193,19 +191,19 @@ Este diagrama proporciona una vista más detallada de los componentes del proyec
 
 ![Secuencia_CU01](../media/Secuencia_CU01.png)
 
-El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
+Diagrama 03: El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
 
 **Diagrama de Secuencia de CU02 “Exportar reportes”**
 
 ![Secuencia_CU02](../media/Secuencia_CU02.png)
 
-El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
+Diagrama 04: El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
 
 **Diagrama de Secuencia de CU03 “Aplicar filtros a los gráficos”**
 
 ![Secuencia_CU03](../media/Secuencia_CU03.png)
 
-El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
+Diagrama 05: El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
 
 
 ### 2.4. Vista de desarrollo
@@ -214,8 +212,7 @@ Diagrama de paquetes
 
 ![diagrama_de_paquete](../media/diagrama_de_paquete.png)
 
-El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
-
+Diagrama 06: El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
 
 ### 2.5. Vista Fisica
 
@@ -223,8 +220,7 @@ Diagrama de clases
 
 ![diagrama_clase](../media/diagrama_clase.png)
 
-Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas
-
+Diagrama 07: Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas.
 
 ## 3. Objetivos y Limitaciones Arquitectónicas <a id="3"></a>
 ### 3.1 Disponibilidad
@@ -282,7 +278,7 @@ Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las 
 ![vistas_de_caso_de_uso_cu01](../media/vistas_de_caso_de_uso_cu01.png)
 </center>
 
-El estudiante es el actor que interactúa con el sistema para acceder a las estadísticas académicas
+Diagrama 08: El estudiante es el actor que interactúa con el sistema para acceder a las estadísticas académicas.
 
 **Diagrama de CU02 “Aplicar filtros a los gráficos”**
 <center>
@@ -290,8 +286,7 @@ El estudiante es el actor que interactúa con el sistema para acceder a las esta
 ![vistas_de_caso_de_uso_cu02](../media/vistas_de_caso_de_uso_cu02.png)
 </center>
 
-El estudiante selecciona filtros para personalizar los gráficos, como semestres, cursos, o indicadores académicos.
-
+Diagrama 09: El estudiante selecciona filtros para personalizar los gráficos, como semestres, cursos, o indicadores académicos.
 
 **Diagrama de CU03 “Exportar reportes”**
 <center>
@@ -299,24 +294,40 @@ El estudiante selecciona filtros para personalizar los gráficos, como semestres
 ![vistas_de_caso_de_uso_cu03](../media/vistas_de_caso_de_uso_cu03.png)
 </center>
 
-El estudiante puede exportar los reportes generados en diferentes formatos.
-
+Diagrama 10: El estudiante puede exportar los reportes generados en diferentes formatos.
 
 <h2 id="6">6. Vista Lógica</h2>
 
 ### 6.1 Perspectiva del producto
 ![diagrama_contextual](../media/diagrama_contextual.png)
 <p style="text-align: justify;">
-Este diagrama contextual muestra las interacciones clave entre el sistema "PAMIS" y sus actores externos. Los actores involucrados incluyen Usuarios, Administradores, Base de datos y Terraform.
+Diagrama 11: Este diagrama contextual muestra las interacciones clave entre el sistema "PAMIS" y sus actores externos. Los actores involucrados incluyen Usuarios, Administradores, Base de datos y Terraform.
 </p>
 
-<h2 id="_Toc52661353">8. Vista de Despliegue</h2>
+## 7. Vista de Procesos <a id="7"></a>
+### 7.1 Diagrama de Proceso Actual
+   "El sistema actual no cuenta con un flujo definido para gestionar estadísticas académicas. PAMIS viene a estructurar y optimizar este proceso."
+
+### 7.2 Diagrama de Proceso Propuesto
+![diagrama-propuesto](../media/diagrama-propuesto.png)
+
+Diagrama 12: El diagrama muestra cómo el estudiante interactúa con PAMIS para navegar, aplicar filtros a gráficos y exportar datos, mientras el sistema actualiza y genera los resultados solicitados.
+
+<h2 id="8">8. Vista de Despliegue</h2>
 
 ### 8.1 Diagrama de Contenedor
 ![diagrama_de_contenedor](../media/diagrama_de_contenedor.png)
 <p style="text-align: justify;">
-El diagrama muestra cómo la Aplicación Web interactúa con el Servidor Backend para gestionar datos en una Base de Datos en Azure, mientras Terraform automatiza la infraestructura en la nube.
+Diagrama 13: El diagrama muestra cómo la Aplicación Web interactúa con el Servidor Backend para gestionar datos en una Base de Datos en Azure, mientras Terraform automatiza la infraestructura en la nube.
 </p>
+
+## 9. Vista de Implementación <a id="9"></a>
+### 9.1 Diagrama de Componentes
+Componentes del Sistema de Análisis Académico en Power BI PAMIS.
+
+![diagrama-componentes](../media/diagrama-componentes.png)
+
+Diagrama 14: Este diagrama proporciona una vista más detallada de los componentes del proyecto, facilitando la comprensión de su estructura y organización.
 
 ## 10. Vista de Datos <a id="10"></a>
 ### 10.1 Diagrama Entidad Relación
@@ -325,10 +336,9 @@ El diagrama muestra cómo la Aplicación Web interactúa con el Servidor Backend
 
 ![diagrama_er](../media/diagrama_er.png)
 </center>
-Este diagrama ER representa la tabla Cursos, que almacena información académica clave, como el código del curso, semestre, cantidad de matriculados, aprobados, desaprobados, retiros, abandonos y estadísticas como promedio y desviación estándar de notas. La clave primaria está compuesta por CodigoCurso y Semestre, lo que garantiza la unicidad de los registros por periodo académico.
+Diagrama 15: Este diagrama ER representa la tabla Cursos, que almacena información académica clave, como el código del curso, semestre, cantidad de matriculados, aprobados, desaprobados, retiros, abandonos y estadísticas como promedio y desviación estándar de notas. La clave primaria está compuesta por CodigoCurso y Semestre, lo que garantiza la unicidad de los registros por período académico.
 
-
-## 11. Calidad <a id="10"></a>
+## 11. Calidad <a id="11"></a>
 
 ### 11.1. Escenario de Seguridad
 
