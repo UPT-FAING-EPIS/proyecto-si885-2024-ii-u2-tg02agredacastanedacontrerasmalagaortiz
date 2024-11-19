@@ -219,6 +219,22 @@ El estudiante selecciona filtros para personalizar los gráficos, como semestres
 El estudiante puede exportar los reportes generados en diferentes formatos.
 
 
+<h2 id="6">6. Vista Lógica</h2>
+
+### 6.1 Perspectiva del producto
+![diagrama_contextual](../media/diagrama_contextual.png)
+<p style="text-align: justify;">
+Este diagrama contextual muestra las interacciones clave entre el sistema "PAMIS" y sus actores externos. Los actores involucrados incluyen Usuarios, Administradores, Base de datos y Terraform.
+</p>
+
+<h2 id="_Toc52661353">8. Vista de Despliegue</h2>
+
+### 8.1 Diagrama de Contenedor
+![diagrama_de_contenedor](../media/diagrama_de_contenedor.png)
+<p style="text-align: justify;">
+El diagrama muestra cómo la Aplicación Web interactúa con el Servidor Backend para gestionar datos en una Base de Datos en Azure, mientras Terraform automatiza la infraestructura en la nube.
+</p>
+
 ## 10. Vista de Datos <a id="10"></a>
 ### 10.1 Diagrama Entidad Relación
 
