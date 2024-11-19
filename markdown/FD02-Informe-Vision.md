@@ -30,13 +30,14 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 **Plataforma de análisis de datos de matriculados en la carrera de Ingeniería de Sistemas para la Universidad Privada de Tacna - PAMIS**
 
-**Versión 1.0**
+**Versión 2.0**
 
 ## **Control de Versiones**
 
 | Versión | Hecha por | Revisada por | Aprobada por | Fecha      | Motivo           |
 | :-----: | --------- | ------------ | ------------ | ---------- | ---------------- |
 | 1.0     | JAR       | IME          | XOF          | 27/08/2024 | Versión Original |
+| 2.0     | ACL       | JCC          | JAR          | 15/11/2024 | Versión Original |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -256,6 +257,10 @@ Dado que PAMIS es una plataforma basada en la web, los usuarios requieren un acc
     <strong>- Estudiantes:</strong> Diferentes niveles de conocimiento tecnológico, interés en el análisis de datos, motivación por mejorar su desempeño académico.
 </p>
 
+<p style="text-align: justify;">
+    <strong>- Administradores:</strong> Gestión de datos actualizados de la plataforma PAMIS y toma de decisiones estratégicas para el desarrollo de reportes.
+</p>
+
 ### 3.6 Necesidades de los interesados y usuarios
 <p style="text-align: justify;">
     <strong>- Administradores:</strong>
@@ -323,7 +328,7 @@ Los costos incluirán desarrollo de la aplicación en Power BI. El servicio ser�
 </center>
 
 <center>
-<strong>Tabla 01:</strong> En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 10,533.00
+<strong>Tabla 01:</strong> En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 11,695.80
 </center>
 
 ### 4.5 Licenciamiento e instalación 

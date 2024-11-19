@@ -30,7 +30,7 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 **Plataforma de análisis de datos de matriculados en la carrera de Ingeniería de Sistemas para la Universidad Privada de Tacna - PAMIS**
 
-**Versión 1.0**
+**Versión 2.0**
 
 ## **Control de Versiones**
 
