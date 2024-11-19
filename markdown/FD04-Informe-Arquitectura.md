@@ -110,6 +110,44 @@ Docente: *Mag. Patrick Cuadros Quiroga*
     Con una visión comprensiva de PAMIS y su arquitectura, este documento simplifica la colaboración y el entendimiento entre todos los miembros del equipo de desarrollo. El objetivo es asegurar que el proyecto se implemente de manera efectiva y eficiente, cumpliendo con todos los requisitos y objetivos establecidos, y ofreciendo una plataforma robusta y fácil de usar para los estudiantes.
 </p>
 
+### 1.1 Propósito
+
+<p style="text-align: justify;">
+PAMIS busca ofrecer una plataforma de tecnología que otorgue a los estudiantes la oportunidad de abordar los desafíos relacionados con el análisis de su desempeño académico. Estos desafíos incluyen la falta de herramientas adecuadas para acceder a estadísticas detalladas sobre los cursos, la dificultad para tomar decisiones informadas basadas en datos claros y la ausencia de una plataforma centralizada para visualizar su progreso académico. Pero no son solo estos desafíos, sino que PAMIS también busca proporcionar mejoras y optimizaciones, tales como:
+</p>
+
+<p style="text-align: justify;">
+- <u><b>Facilitar el Análisis Académico:</b></u> Proporcionar una plataforma que permita a los usuarios analizar datos de matriculación y rendimiento académico de manera eficiente, identificando tendencias y patrones clave.</p>
+
+
+<p style="text-align: justify;">
+- <u><b>Mejorar la Toma de Decisiones:</b></u> Ofrecer informes y recomendaciones basados en análisis estadísticos que guíen la toma de decisiones estratégicas para los estudiantes.</p>
+
+
+<p style="text-align: justify;">
+- <u><b>Optimizar los Resultados Educativos:</b></u> A través del análisis de datos y la identificación de áreas de mejora, ayudar a la institución a implementar estrategias que optimicen el rendimiento académico y aumenten las tasas de aprobación.</p>
+
+
+### 1.2 Alcance
+
+<u>Inclusiones:</u>
+- **Desarrollo de una Aplicación en PowerBI:**
+  - Creación de un dashboard interactivo en PowerBI que facilite la exploración visual de los datos académicos.
+  - Implementación de funcionalidades que permitan a los usuarios visualizar datos de matriculación, rendimiento académico y tasas de aprobación mediante gráficos dinámicos y tablas detalladas en PowerBI.
+- **Funcionalidades Clave:**
+  - Análisis detallado de los datos de matrículas, rendimiento académico y otros indicadores clave dentro del entorno de PowerBI.
+  - Generación de informes automatizados y personalizados con recomendaciones basadas en análisis estadísticos, accesibles directamente en PowerBI.
+  - Exploración interactiva de los datos a través de visualizaciones en PowerBI para identificar patrones y tendencias que puedan guiar la toma de decisiones.
+- **Soporte Tecnológico:**
+  - Integración de capacidades avanzadas de análisis de datos y visualización en PowerBI para un rendimiento óptimo.
+  - Mantenimiento y actualizaciones continuas del dashboard en PowerBI, basadas en el feedback de los usuarios y las necesidades emergentes.
+  
+<u>Exclusiones:</u>
+- **Servicios Educativos Directos:** PAMIS no proporcionará servicios educativos directos ni consultas académicas personalizadas.
+- **Gestión de Otros Programas Académicos:** El enfoque estará limitado a la Ingeniería de Sistemas, y no se incluirá la gestión de otros programas académicos.
+- **Soporte Legal o Administrativo:** La plataforma no ofrecerá asistencia legal ni soporte administrativo más allá del análisis de datos académicos.
+- **Soporte para Dispositivos Móviles:** PAMIS no ofrecerá soporte ni optimización para dispositivos móviles, enfocándose únicamente en entornos de escritorio a través de PowerBI.
+
 
 ## 4. Análisis de Requerimientos <a id="4"></a>
 ### 4.1 Requerimientos funcionales
