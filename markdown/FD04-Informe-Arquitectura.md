@@ -26,7 +26,7 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-# **Documento de Arquitectura**
+# **Documento de Arquitectura de Software**
 
 **Plataforma de análisis de datos de matriculados en la carrera de Ingeniería de Sistemas para la Universidad Privada de Tacna - PAMIS**
 
@@ -36,7 +36,7 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 | Versión | Hecha por | Revisada por | Aprobada por | Fecha      | Motivo           |
 | :-----: | --------- | ------------ | ------------ | ---------- | ---------------- |
-| 1.0     | JAR       | IME          | XOF          | 27/08/2024 | Versión Original |
+| 1.0     | JCC       | IME          | ACL          | 15/11/2024 | Versión Original |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -93,6 +93,7 @@ Docente: *Mag. Patrick Cuadros Quiroga*
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
+# **Documento de Arquitectura de Software**
 
 <h2 id="1">1. Introducción </h2>
 
