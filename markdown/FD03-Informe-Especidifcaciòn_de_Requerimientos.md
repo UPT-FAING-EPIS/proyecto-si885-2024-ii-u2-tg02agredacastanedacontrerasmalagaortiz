@@ -93,7 +93,7 @@ V. [**Fases de Desarrollo**](#5)
       b) Diagrama de Actividades con Objetos
 
       c) Diagrama de Secuencia 
-      
+
       d) Diagrama de Clases
 
 [Conclusiones](#conclusiones)  
@@ -101,3 +101,23 @@ V. [**Fases de Desarrollo**](#5)
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
+
+## 1. Generalidades de la Empresa <a id="1"></a>
+### 1. Nombre de la Empresa
+Universidad Privada de Tacna
+
+### 2. Visión
+La visión de la UPT con la plataforma PAMIS es fortalecer la calidad educativa mediante una herramienta analítica que permita a los estudiantes tomar decisiones informadas basadas en datos. La plataforma se alinea con el objetivo institucional de proporcionar una educación personalizada y orientada al éxito académico, apoyando el análisis de datos como pilar fundamental para la mejora continua y la toma de decisiones estratégicas”
+
+### 3. Misión
+"La misión de la UPT, a través de PAMIS, es ofrecer una herramienta que facilite el acceso a datos académicos detallados y personalizados para los estudiantes de Ingeniería de Sistemas. Esto busca optimizar su experiencia académica y mejorar su rendimiento, brindando una plataforma que centralice la información académica y reduzca la carga administrativa de la consulta y el manejo de datos.
+
+### 4. Organigrama
+<center>
+
+![organigrama](../media/organigrama.png)
+</center>
+
+Administradores: Nivel superior compuesto por directores de escuela y coordinadores de carrera. Se encargan de optimizar recursos y tomar decisiones estratégicas con base en los datos proporcionados por PAMIS.
+
+Estudiantes: En el nivel base, los usuarios principales de PAMIS, quienes acceden a la plataforma para evaluar su rendimiento, identificar áreas de mejora y tomar decisiones informadas sobre su trayectoria académica.
