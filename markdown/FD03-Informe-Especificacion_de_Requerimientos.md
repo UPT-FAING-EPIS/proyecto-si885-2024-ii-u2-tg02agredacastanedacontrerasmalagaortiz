@@ -114,12 +114,10 @@ La visión de la UPT con la plataforma PAMIS es fortalecer la calidad educativa 
 ### 4. Organigrama
 <center>
 
-![organigrama](../media/organigrama.png)
+![organigrama](../media/organigrama2.png)
 </center>
 
-Administradores: Nivel superior compuesto por directores de escuela y coordinadores de carrera. Se encargan de optimizar recursos y tomar decisiones estratégicas con base en los datos proporcionados por PAMIS.
-
-Estudiantes: En el nivel base, los usuarios principales de PAMIS, quienes acceden a la plataforma para evaluar su rendimiento, identificar áreas de mejora y tomar decisiones informadas sobre su trayectoria académica.
+Gráfico 01: Esquema del organigrama de la Universidad Privada de Tacna.
 
 
 ## II. Visionamiento de la Empresa<a id="_Toc52661347"></a>
