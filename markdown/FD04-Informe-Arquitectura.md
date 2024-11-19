@@ -226,6 +226,29 @@ Diagrama de clases
 Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas
 
 
+## 3. Objetivos y Limitaciones Arquitectónicas <a id="3"></a>
+### 3.1 Disponibilidad
+- Alta Disponibilidad: Implementar mecanismos de redundancia y recuperación ante fallos para asegurar que la plataforma esté disponible en todo momento.
+- Monitoreo y Alertas: Utilizar herramientas de monitoreo para detectar y solucionar problemas antes de que afecten a los usuarios.
+- Escalabilidad Horizontal: Con un aumento repentino de usuarios, se puede optar por añadir varias instancias de PAMIS.
+
+### 3.2 Seguridad
+- Autenticación y Autorización: Implementar controles de acceso basados en roles para asegurar que solo usuarios autorizados puedan acceder a ciertos niveles de información.
+- Encriptación de Datos: Implementar la encriptación de datos en tránsito y en reposo para proteger la información sensible.
+- Monitoreo de Seguridad: Realizar monitoreos constantes para detectar y mitigar posibles amenazas de seguridad.
+- Cumplimiento Normativo: Asegurarse de que la plataforma cumpla con las normativas y regulaciones vigentes en materia de protección de datos y privacidad.
+
+### 3.3 Adaptabilidad
+- Arquitectura Modular: Diseñar el sistema con una arquitectura modular para permitir la fácil adición, eliminación o modificación de componentes sin afectar al resto del sistema.
+- Soporte Multiplataforma: Asegurar que la plataforma funcione correctamente en diversos dispositivos y navegadores.
+- Configurabilidad: Permitir que los administradores configuren ciertos aspectos del sistema sin necesidad de cambios en el código.
+
+### 3.4 Rendimiento
+- Optimización de consultas: Optimizar las consultas y modelos de datos con el propósito de que las visualizaciones se generen en tiempo real sin demora alguna.
+- Tiempos de carga: Minimizar de tiempos de carga en el dashboard interactivo, asegurando una experiencia de usuario fluida.
+- Caching: Uso de técnicas de cacheo y optimización del modelo de datos para reducir la carga en el servidor durante picos de uso.
+- Balanceo de Carga: Utilizar balanceadores de carga para distribuir el tráfico entre varios servidores y asegurar un rendimiento óptimo.
+
 ## 4. Análisis de Requerimientos <a id="4"></a>
 ### 4.1 Requerimientos funcionales
 | **Código** | **Requerimiento**                     | **Descripción**                                                                                                                                                                                                                  |
