@@ -344,6 +344,7 @@ Diagrama 15: Este diagrama ER representa la tabla Cursos, que almacena informaci
 ## 11. Calidad <a id="11"></a>
 
 ### 11.1. Escenario de Seguridad
+<ul style="text-align: justify;">
 
 Como plataforma diseñada para manejar información académica sensible, incluyendo datos personales de estudiantes y docentes, es esencial que PAMIS esté protegida contra accesos no autorizados y amenazas potenciales. La seguridad garantiza que los usuarios confíen en la plataforma, proporcionando un entorno seguro para el análisis y la gestión de datos académicos. Los mecanismos de autenticación, autorización y encriptación están implementados para asegurar que solo personas con los permisos correspondientes accedan a la información, protegiendo la confidencialidad e integridad de los datos. PAMIS también incorpora un sistema de monitoreo de seguridad que permite detectar actividades sospechosas, fortaleciendo la respuesta ante posib
 
@@ -424,3 +425,5 @@ PAMIS opera de forma continua, brindando acceso a los usuarios las 24 horas del 
       - **Respuesta:** El acceso a la información se restringe exclusivamente al personal autorizado.
 
       - **Medida de la Respuesta:** La respuesta es instantánea, protegiendo la confidencialidad de los datos sensibles.
+
+</ul>
