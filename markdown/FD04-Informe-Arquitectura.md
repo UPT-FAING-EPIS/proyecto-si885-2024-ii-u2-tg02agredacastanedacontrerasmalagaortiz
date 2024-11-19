@@ -166,6 +166,65 @@ El proyecto PAMIS (Plataforma de Análisis de Matriculados en Ingeniería de Sis
 PAMIS está diseñada para ser una herramienta intuitiva y de fácil acceso, con una interfaz visual que permite a los usuarios explorar los datos de manera interactiva. La plataforma no solo permitirá la visualización clara de estos datos mediante gráficos y tablas, sino que también generará informes que ofrecerán recomendaciones basadas en análisis estadísticos. Estos informes ayudarán a los estudiantes a tomar decisiones informadas sobre el proceso educativo, optimizando los resultados académicos y contribuyendo al éxito general de los programas de ingeniería.
 </p>
 
+## 2. Representación Arquitectónica <a id="4"></a>
+
+### 2.1. Escenarios
+
+Diagrama de Casos de Uso de la plataforma en PowerBi
+
+![diagrama_caso_uso](../media/diagrama_caso_uso.png)
+
+El diagrama muestra cómo el Estudiante interactúa con el sistema PAMIS para Consultar estadísticas académicas, Aplicar filtros y Exportar reportes, destacando las principales funcionalidades disponibles para el usuario.
+
+
+### 2.2. Vista Logica
+
+Componentes del Sistema de Análisis Académico en Power BI PAMIS
+
+![componentes_sistema](../media/componentes_sistema.png)
+
+Este diagrama proporciona una vista más detallada de los componentes del proyecto, facilitando la comprensión de su estructura y organización.
+
+
+### 2.3. Vista del Proceso
+
+**Diagrama de Secuencia de CU01 "Consultar Estadisticas academicas"**
+
+![Secuencia_CU01](../media/Secuencia_CU01.png)
+
+El diagrama muestra cómo el estudiante accede, selecciona una sección y navega por gráficos que se actualizan dinámicamente.
+
+**Diagrama de Secuencia de CU02 “Exportar reportes”**
+
+![Secuencia_CU02](../media/Secuencia_CU02.png)
+
+El diagrama muestra cómo el estudiante aplica filtros a un gráfico, y el sistema actualiza los datos dinámicamente mediante los controles de filtros y gráficos.
+
+**Diagrama de Secuencia de CU03 “Aplicar filtros a los gráficos”**
+
+![Secuencia_CU03](../media/Secuencia_CU03.png)
+
+El diagrama muestra cómo el estudiante exporta un gráfico en formato XLSX o CSV, y el sistema genera y descarga el archivo.
+
+
+### 2.4. Vista de desarrollo
+
+Diagrama de paquetes
+
+![diagrama_de_paquete](../media/diagrama_de_paquete.png)
+
+El diagrama representa la estructura de PAMIS, donde los Dashboards interactúan con los usuarios y son gestionados a través del Power BI Service, que recibe reportes publicados desde los Servicios de Publicación de Power BI. La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.La Base de Datos provee la información que alimenta los gráficos, asegurando un flujo eficiente entre datos, procesamiento y visualización.
+
+
+### 2.5. Vista Fisica
+
+Diagrama de clases
+
+![diagrama_clase](../media/diagrama_clase.png)
+
+Este diagrama muestra los datos del dashboard de PowerBi, donde se muestran las diferentes relaciones entre las tablas
+
+
 ## 4. Análisis de Requerimientos <a id="4"></a>
 ### 4.1 Requerimientos funcionales
 | **Código** | **Requerimiento**                     | **Descripción**                                                                                                                                                                                                                  |
