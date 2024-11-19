@@ -283,7 +283,7 @@ Los pipelines de CI/CD en Azure DevOps integran los artefactos generados, como s
 
 **Infraestructura de Red**
 
-- **Conexión a Internet:** <p style="text-align: justify;">Una conexión de alta velocidad es de gran importancia, más aún con una arquitectura de nube o con servidores externos que aseguren la disponibilidad de la plataforma.
+- **Conexión a Internet:** <p style="text-align: justify;">Una conexión a internet de alta velocidad es esencial para garantizar la disponibilidad y el acceso continuo a los servicios en la nube. Esto es especialmente crítico para la operación de Azure Data Factory y las consultas en tiempo real hacia Azure Synapse Analytics.
 </p>
 
 ### 4.2. Factibilidad Económica
