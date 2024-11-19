@@ -443,7 +443,7 @@ A continuación se detallan los costos anuales luego de la implementación del s
 ### Taza de Interés
 <center>
 
-![cirterios-de-inversion](../media/tasa-interes.png)
+![tasa-interes](../media/tasa-interes.png)
 </center>
 
 <center>
