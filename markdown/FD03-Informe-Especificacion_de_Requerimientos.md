@@ -102,7 +102,7 @@ V. [**Fases de Desarrollo**](#5)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-## 1. Generalidades de la Empresa <a id="1"></a>
+## I. Generalidades de la Empresa <a id="1"></a>
 ### 1. Nombre de la Empresa
 Universidad Privada de Tacna
 
@@ -122,8 +122,149 @@ Administradores: Nivel superior compuesto por directores de escuela y coordinado
 
 Estudiantes: En el nivel base, los usuarios principales de PAMIS, quienes acceden a la plataforma para evaluar su rendimiento, identificar áreas de mejora y tomar decisiones informadas sobre su trayectoria académica.
 
-### 5. Fases de Desarrollo</h2>
 
+## II. Visionamiento de la Empresa<a id="1"></a>
+#### 1. Descripción del Problema
+
+En la actualidad, los estudiantes de la Escuela Profesional de Ingeniería de Sistemas de la Universidad Privada de Tacna (UPT) enfrentan diversos desafíos en la gestión de su rendimiento académico. Estos desafíos incluyen la falta de herramientas adecuadas para acceder a estadísticas detalladas sobre los cursos, la dificultad para tomar decisiones informadas basadas en datos claros y la ausencia de una plataforma centralizada para visualizar su progreso académico.
+
+- **Falta de acceso a información académica personalizada:** La escuela dispone de un sistema administrativo que gestiona las estadísticas académicas a nivel institucional. Sin embargo, los estudiantes no tienen acceso directo a una plataforma que les permita visualizar de manera clara y personalizada datos como tasas de aprobación, índices de deserción y distribución de calificaciones en los cursos que les interesan. Esto limita su capacidad para evaluar y planificar su trayectoria académica de manera efectiva.
+
+- **Dificultades para tomar decisiones informadas:** La carencia de herramientas accesibles y comprensibles para los estudiantes implica que deben tomar decisiones basadas en percepciones o información incompleta. Esta situación puede llevar a una planificación académica menos eficaz y a un rendimiento subóptimo en los cursos.
+
+- **Impacto en el rendimiento académico:** Sin acceso a una visión detallada y precisa de su rendimiento académico, los estudiantes pueden enfrentar dificultades para identificar áreas de mejora y ajustar su enfoque de estudio, lo que afecta negativamente su desempeño y progreso académico.
+
+- **Necesidad de una plataforma de visualización de datos:** Es fundamental desarrollar una herramienta analítica que permita a los estudiantes acceder a estadísticas relevantes y personalizadas sobre los cursos. Esta plataforma debería facilitar la toma de decisiones informadas, mejorar la planificación.
+
+#### 2. Objetivos de Negocios
+
+El objetivo principal de PAMIS es proporcionar una plataforma analítica que facilite la toma de decisiones académicas tanto para estudiantes como para el personal administrativo y docente. Los objetivos específicos de negocio incluyen:
+
+- **Mejorar el acceso a información académica:** Permitir a los estudiantes visualizar datos personalizados sobre su rendimiento y progresión académica.
+
+- **Optimizar la planificación académica:** Apoyar a los administradores en la identificación de patrones en la matrícula y rendimiento, permitiendo una asignación de recursos más eficiente.
+
+- **Incrementar el rendimiento académico:** A través de un acceso simplificado a estadísticas de desempeño, ayudar a los estudiantes a identificar y enfocarse en áreas de mejora, reduciendo las tasas de deserción y aumentando las tasas de aprobación.
+
+- **Fortalecer la calidad educativa:** Fomentar una cultura de toma de decisiones basada en datos que apoya el desarrollo continuo y la mejora de los programas de estudio.
+
+
+#### 3. Objetivos de Diseño
+
+Los objetivos de diseño de PAMIS se centran en crear una interfaz accesible y 	funcional que permita a los usuarios interactuar de manera intuitiva con los datos académicos. Estos objetivos incluyen:
+
+- **Interactividad y facilidad de uso:** Diseñar un dashboard interactivo en Power BI que sea fácil de navegar para usuarios de diversos niveles técnicos.
+
+- **Visualización de datos clara y precisa:** Implementar gráficos, tablas y reportes que permitan a los usuarios comprender rápidamente las estadísticas académicas.
+
+- **Personalización:** Ofrecer opciones de filtrado y segmentación que permitan a los usuarios visualizar los datos según sus necesidades específicas (por ejemplo, por curso, semestre o año académico).
+
+- **Accesibilidad y disponibilidad:** Garantizar que la plataforma esté disponible en entornos de escritorio y sea accesible en cualquier lugar con conexión a Internet.
+
+- **Exportación de reportes:** Incluir funcionalidades que permitan la exportación de reportes en formatos accesibles (PDF, Excel) para el análisis y la consulta fuera de la plataforma.
+
+
+#### 4. Alcance del proyecto
+
+**Inclusiones:**
+Desarrollo de una Aplicación en PowerBI:
+
+- Creación de un dashboard interactivo en PowerBI que facilite la exploración visual de los datos académicos.
+
+- Implementación de funcionalidades que permitan a los usuarios visualizar datos de matriculación, rendimiento académico y tasas de aprobación mediante gráficos dinámicos y tablas detalladas en PowerBI.
+
+Funcionalidades Clave:
+
+- Análisis detallado de los datos de matrículas, rendimiento académico y otros indicadores clave dentro del entorno de PowerBI.
+
+- Exploración interactiva de los datos a través de visualizaciones en PowerBI para identificar patrones y tendencias que puedan guiar la toma de decisiones.
+
+Soporte Tecnológico:
+
+- Integración de capacidades avanzadas de análisis de datos y visualización en PowerBI para un rendimiento óptimo.
+
+- Mantenimiento y actualizaciones continuas del dashboard en PowerBI, basadas en el feedback de los usuarios y las necesidades emergentes.
+
+**Exclusiones:**
+- Servicios Educativos Directos: PAMIS no proporcionará servicios educativos directos ni consultas académicas personalizadas.
+- Gestión de Otros Programas Académicos: El enfoque estará limitado a la Ingeniería de Sistemas, y no se incluirá la gestión de otros programas académicos.
+- Soporte Legal o Administrativo: La plataforma no ofrecerá asistencia legal ni soporte administrativo más allá del análisis de datos académicos.
+- Soporte para Dispositivos Móviles: PAMIS no ofrecerá soporte ni optimización para dispositivos móviles, enfocándose únicamente en entornos de escritorio a través de PowerBI.
+
+#### 5. Viabilidad del sistema
+
+##### 5.1. Viabilidad Tecnica
+
+**Hardware Disponible**
+
+- **Equipos de desarrollo:** Se necesitan equipos de desarrollo capaces de ejecutar software de desarrollo web y herramientas de análisis de datos, los materiales previamente mencionados cumplen con las especificaciones mínimas requeridas:
+
+   - **Procesador:** Intel Core i5 de 4 núcleos, útil para el manejo de tareas de programación, depuración y pruebas.
+
+   - **Memoria RAM:** De 8 a 16 GB de memoria DDR4 expandible.
+
+   - **Almacenamiento:** Disco duro sólido (SSD) para el sistema operativo, esto asegura tiempos de carga cada vez más cortos con un óptimo rendimiento general.
+
+   - **Tarjeta Grafica:**Se usa la tarjeta gráfica integrada en el procesador Intel, pero también podemos hacer uso de una GPU dedicada como la Nvidia RTX 3050.
+
+
+**Software**
+
+- **Aplicaciones y Herramientas de Desarrollo:**
+   - **Visual Studio Code:** Es el IDE principal para el desarrollo del proyecto, siendo compatible con los sistemas operativos Windows y macOS, ofreciendo extensiones que personalizan el entorno de trabajo.
+
+   - **Power BI:** Esta herramienta es para la creación de dashboard y visualizaciones de datos interactivos.
+
+   - **Sistemas Operativos:** Pueden funcionar bajo Windows y macOS.
+
+- **Navegadores Web:** La plataforma debe ser compatible con los navegadores web más conocidos y utilizados tales como Google Chrome, Mozilla Firefox, Microsoft Edge, etc.
+
+**Infraestructura de Red**
+
+- **Conexion a Internet:** Una conexión de alta velocidad es de gran importancia, más aún con una arquitectura de nube o con servidores externos que aseguren la disponibilidad de la plataforma.
+
+
+##### 5.2. Viabilidad Economica
+
+![tipos_costo](../media/tipos_costo.png)
+
+En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 10,533.00
+
+
+##### 5.3. Viabilidad Operativa
+
+La viabilidad operativa del sistema PAMIS se basa en su capacidad para satisfacer las necesidades identificadas de los estudiantes, docentes y administradores de la Universidad Privada de Tacna (UPT), mejorando la toma de decisiones académicas y optimizando el acceso a datos relevantes. A continuación, se detallan los principales aspectos que confirman su viabilidad operativa:
+
+- **Beneficios para los usuarios:**
+
+   - **Estudiantes:** PAMIS permitirá a los estudiantes acceder a datos detallados sobre su rendimiento académico, como tasas de aprobación, índices de deserción y calificaciones. Esta información facilita una toma de decisiones más informada, ayudando a los estudiantes a planificar sus trayectorias académicas de manera eficiente y enfocarse en áreas donde necesitan mejorar.
+
+   - **Docentes:** La plataforma ofrece a los docentes herramientas para analizar el rendimiento de sus estudiantes en cada curso. Esto les permite identificar áreas de dificultad común, ajustar sus métodos de enseñanza y brindar apoyo específico a estudiantes que lo requieran.
+
+   - **Administradors:** Para los administradores, PAMIS centraliza la información académica y permite analizar tendencias de matrícula y rendimiento. Esto facilita la planificación académica, optimización de recursos, y toma de decisiones estratégicas para mejorar la calidad educativa en la Escuela Profesional de Ingeniería de Sistemas.
+
+
+- **Reduccion de Carga Administrativa:** PAMIS ayuda a reducir la carga administrativa al centralizar el acceso a la información académica en un solo sistema. Los estudiantes y docentes ya no necesitan solicitar datos específicos a través de otros departamentos, ya que la plataforma ofrece una vista completa y en tiempo real de las estadísticas académicas necesarias. Esto mejora la eficiencia operativa, liberando tiempo y recursos para otras actividades en la institución.
+
+- **Facilidad de Uso:** La plataforma PAMIS está diseñada para ser intuitiva y de fácil acceso, utilizando Power BI como base, el sistema ofrece una interfaz interactiva con dashboards y visualizaciones gráficas que permiten a los usuarios explorar los datos sin necesidad de conocimientos técnicos avanzados. Esto asegura que tanto estudiantes como docentes y administradores puedan utilizar la plataforma sin dificultades, incrementando la satisfacción y el valor percibido del sistema.
+
+- **Compatibilidad con las Politicas Institucionales:** PAMIS cumple con las políticas y regulaciones internas de la UPT en cuanto al manejo de datos académicos y privacidad de la información. Además, sigue la normativa de la Ley de Protección de Datos Personales en Perú, garantizando la seguridad y confidencialidad de los datos personales de los estudiantes. Esto refuerza la viabilidad operativa de la plataforma, asegurando su aceptación y cumplimiento dentro de la institución.
+
+Estos factores confirman que PAMIS es operativamente viable, ya que proporciona beneficios tangibles a sus usuarios, reducir cargas administrativas y es fácil de usar, cumpliendo además con las regulaciones internas y externas de la UPT y asegurando la escalabilidad del sistema a largo plazo.
+
+
+#### 6. Informacion obtenida del levantamiento de informacion
+
+Durante el levantamiento de información para el desarrollo de PAMIS, se identificaron los siguientes aspectos clave:
+
+   - **Necesidades de los estudiantes:** Los estudiantes de Ingeniería de Sistemas manifestaron la necesidad de contar con una plataforma centralizada que les permita acceder a estadísticas detalladas de su rendimiento académico. Actualmente, la falta de una herramienta de visualización dificulta el seguimiento de su progreso y la identificación de áreas de mejora, lo cual impacta en su planificación académica y rendimiento general.
+
+   - **Requerimientos de los Docentes y Administradores:** Los docentes necesitan herramientas para monitorear el progreso de sus estudiantes y adaptar sus métodos de enseñanza según el rendimiento de cada curso. Asimismo, los administradores buscan optimizar la asignación de recursos mediante el análisis de tendencias de matrícula, tasas de aprobación y áreas críticas en el rendimiento estudiantil.
+
+La información obtenida durante el levantamiento confirma la necesidad y viabilidad de PAMIS como una solución para centralizar y optimizar el acceso a datos académicos, beneficiando tanto a estudiantes como al cuerpo docente y administrativo de la UPT.
+
+
+## V. Fases de Desarrollo<a id="1"></a>
 #### 1. Perfiles de Usuario
 
 <ul style="text-align: justify;">
