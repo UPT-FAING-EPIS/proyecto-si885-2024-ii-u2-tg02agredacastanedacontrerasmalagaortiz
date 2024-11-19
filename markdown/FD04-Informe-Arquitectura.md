@@ -355,6 +355,35 @@ PAMIS es una plataforma modular y flexible, diseñada para adaptarse a las neces
 
 PAMIS opera de forma continua, brindando acceso a los usuarios las 24 horas del día, los 7 días de la semana. La plataforma cuenta con redundancia y planes de recuperación que aseguran la continuidad del servicio ante fallas. Además, es capaz de escalar horizontalmente para manejar aumentos en el número de usuarios, manteniendo la calidad del servicio y reduciendo tiempos de inactividad.
 
+   - **Disponibilidad continua:** PAMIS está accesible en todo momento para administradores y usuarios, garantizando una experiencia de usuario sin interrupciones.
+
+
+   - **Recuperacion rapida ante fallos:** Ante una falla inesperada, el sistema cuenta con mecanismos de recuperación automática que minimizan el tiempo de inactividad.
+
+
+   - **Escalabilidad:** El diseño de PAMIS permite aumentar su capacidad de respuesta ante mayores cargas de usuarios sin comprometer el rendimiento.
+
+   
+   - **Medida de la Respuesta:** El sistema se recupera o escala en un tiempo mínimo para evitar interrupciones perceptibles para el usuario.
 
 
 ### 11.5. Otro Escenario
+
+   - **Escenario de confidencialidad**
+   El control de acceso se gestiona a través de permisos basados en roles, lo que garantiza que solo usuarios con los privilegios correspondientes puedan visualizar o modificar datos sensibles. Ante un intento de acceso por parte de un usuario no autorizado, PAMIS responde bloqueando el acceso y generando una alerta.
+   
+      - **Afecta:** Usuarios y administradores de PAMIS.
+
+      - **Validacion del Escenario:** Solo el personal autorizado puede acceder a la información confidencial de los estudiantes y la universidad.
+
+      - **Fuente:** Intento de acceso no autorizado.
+
+      - **Estimulo:** Intentar acceder a información confidencial.
+
+      - **Entorno:** Condiciones normales de operación de PAMIS.
+
+      - **Artefacto:** Sistema de control de acceso.
+
+      - **Respuesta:** El acceso a la información se restringe exclusivamente al personal autorizado.
+
+      - **Medida de la Respuesta:** La respuesta es instantánea, protegiendo la confidencialidad de los datos sensibles.
