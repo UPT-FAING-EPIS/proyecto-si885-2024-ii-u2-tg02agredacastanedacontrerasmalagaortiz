@@ -240,12 +240,45 @@ Se usará para crear informes, gráficos interactivos y el dashboard principal; 
 - **Aplicaciones y Herramientas de Desarrollo:**
 
   - *Visual Studio Code:* Es el IDE principal para el desarrollo del proyecto, siendo compatible con los sistemas operativos Windows y macOS, ofreciendo extensiones que personalizan el entorno de trabajo.
-
-  - *Power BI:* Esta herramienta es para la creación de dashboards y visualizaciones de datos interactivos, además de ser poderosa para los análisis de datos.
-
-  - *Sistemas Operativos:* Pueden funcionar bajo Windows y macOS.
   
-  - *Navegadores Web:* La plataforma debe ser compatible con los navegadores web más conocidos y utilizados tales como Google Chrome, Mozilla Firefox, Microsoft Edge, etc.
+  - *Terraform:* Utilizado para la creación y gestión automatizada de la infraestructura en Azure, asegurando consistencia y escalabilidad.
+
+  - *Power BI:* Herramienta es para la creación de dashboards y visualizaciones de datos interactivos, además de ser poderosa para los análisis de datos.
+
+  - *Azure Data Factory:* Implementado para gestionar pipelines de datos automatizados que integran y transforman información desde las fuentes hacia el almacén de datos.
+
+  - *Azure Synapse Analytics:* Utilizado como almacén de datos centralizado y para realizar análisis avanzados en grandes volúmenes de datos.
+
+  - *Azure DevOps:* Plataforma para la gestión de repositorios, pipelines de CI/CD y control de versiones de los artefactos generados.
+
+  - *Azure SQL Database:* Base de datos transaccional utilizada para la gestión de datos académicos.
+
+  
+- **Navegadores Web:** La plataforma debe ser compatible con los navegadores web más conocidos y utilizados tales como Google Chrome, Mozilla Firefox, Microsoft Edge, etc.
+
+**Infraestructura en la Nube**
+
+- **Grupo de Recursos:** Contenedor lógico llamado inteligencia-negocios, que organiza todos los recursos relacionados en la ubicación East US.
+
+- **Azure SQL Server:** Servidor principal para alojar la base de datos SQL, donde las credenciales son gestionadas de forma segura mediante Azure Key Vault. (Versión utilizada: SQL Server 12.0.)
+
+- **Azure SQL Database:** Base de datos llamada CICLO_UNIVERSITARIO, con una capacidad de hasta 32 GB de almacenamiento, una capacidad minima de 0.5 vCores para ahorrar costos cuando está inactiva y cuenta con una auto-pausa que se activa tras 60 minutos de inactividad.
+
+- **Azure Data Factory:** Automatización de procesos ETL para cargar y transformar datos desde sistemas de origen hacia Azure SQL Database y Synapse Analytics.
+
+- **Azure Synapse Analytics:** Almacén de datos centralizado para integrar y analizar grandes volúmenes de información académica. Optimizado para consultas analíticas rápidas conectadas a Power BI.
+
+- **Terraform:** Infraestructura definida como código para garantizar consistencia y despliegue automatizado de recursos en Azure.
+
+- **Azure Key Vaul:** Gestión segura de credenciales y secretos, como contraseñas y claves de acceso, utilizadas en los diferentes servicios de Azure.
+
+- **Azure DevOps:** Pipelines de CI/CD configurados para despliegues automatizados y gestión de versiones de artefactos generados.
+
+**Automatización**
+
+La creación y el despliegue de los recursos en Azure se gestionan mediante Terraform, lo que asegura que los entornos de desarrollo, pruebas y producción se configuren de forma uniforme.
+
+Los pipelines de CI/CD en Azure DevOps integran los artefactos generados, como scripts SQL, configuraciones de Data Factory y dashboards de Power BI, garantizando actualizaciones consistentes y seguras.
 
 **Infraestructura de Red**
 
@@ -260,7 +293,7 @@ Se definieron los siguientes costos:
 
 <center>
 
-![costos-generales](../media/Costos-Generales.png)
+![costos-generales](../media/costos-generales.png)
 </center>
 
 <center>
@@ -268,25 +301,24 @@ Se definieron los siguientes costos:
 </center>
 
 #### 4.2.2. Costos operativos durante el desarrollo 
-
 <center>
 
-
+![costos-operativos](../media/costos-operativos.png)
 </center>
 
 <center>
-En Costos operativos se listan los costos mensuales de servicios. En este caso, no se realizaron gastos para el desarollo del sistema.
+<strong>Tabla 02:</strong> En Costos Operativos se detallan los servicios utilizados durante el desarrollo de PAMIS, haciendo un total de S/7.00 por un mes.
 </center>
 
 #### 4.2.3. Costos del ambiente
 
 <center>
 
-![costos-ambientales](../media/Costos-Ambientales.png)
+![costos-ambientales](../media/costos-ambientales.png)
 </center>
 
 <center>
-<strong>Tabla 02:</strong> En Costos del Ambiente  se muestra el costo del servidor en el que estará desplegado el sistema durante 5 años, haciendo un total de S/1,000
+<strong>Tabla 03:</strong> En Costos del Ambiente  se muestra el costo del servidor en el que estará desplegado el sistema durante 5 años, haciendo un total de S/1,420
 </center>
 
 #### 4.2.4. Costos de personal
@@ -294,22 +326,24 @@ En Costos operativos se listan los costos mensuales de servicios. En este caso, 
 <center>
 
 ![costos-personal](../media/costos-personal-detalle.png)
-![costos-personal](../media/Costos-Personal.png)
-</center>
 
-<center>
-<strong>Tabla 03:</strong> El Costo de Personal muestra los salarios mensuales y totales de 2 meses para el desarrollo de PAMIS, con un costo total combinado de S/ 10,248.00
+<strong>Tabla 04:</strong> El Costo de Personal detallado muestra los días por mes, las horas por día y el pago por hora y día de todo el personal, finalizando con el total de su pago mensual.
+
+![costos-personal](../media/costos-personal.png)
+
+<strong>Tabla 05:</strong> El Costo de Personal muestra los salarios mensuales y totales de 2 meses para el desarrollo de PAMIS, con un costo total combinado de S/ 10,248.00
+
 </center>
 
 #### 4.2.5.  Costos totales del desarrollo del sistema
 
 <center>
 
-![costos-totales](../media/Costos-Totales.png)
+![costos-totales](../media/costos-totales.png)
 </center>
 
 <center>
-<strong>Tabla 04:</strong> En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 10,533.00
+<strong>Tabla 06:</strong> En Costos Totales se resume los subtotales de los costos generales, de personal y del ambiente, llegando a un total acumulado de S/ 11,695.80
 </center>
 <br>
 
@@ -379,44 +413,77 @@ Se tiene que estimar financieramente el resultado del proyecto.
 
         
 5.1.2. Criterios de Inversión
+
+A continuación se detallan los costos anuales luego de la implementación del sistema.
+
+### Tasa de Egreso Anual
+
 <center>
 
-![cirterios-de-inversion](../media/cirterios-de-inversion.png)
+![egreso-anual](../media/egreso-anual.png)
 
 </center>
 
 <center>
-<strong>Tabla 06:</strong> La tabla Criterios de Inversión registra ingresos, egresos y flujo neto de caja 
+<strong>Tabla 07:</strong> La tabla de egreso anual muestra el primer egreso anual del sistema, tomando en cuenta los costos de soporte y del pago anual del servidor.
+</center>
+
+
+### Tabla de FNC
+<center>
+
+![cirterios-de-inversion](../media/fnc.png)
+</center>
+
+<center>
+<strong>Tabla 08:</strong> La tabla Criterios de Inversión registra ingresos, egresos y flujo neto de caja 
 (FNC) mensuales durante un periodo de 0 a 5 años.
 </center>
+
+### Taza de Interés
+<center>
+
+![cirterios-de-inversion](../media/tasa-interes.png)
+</center>
+
+<center>
+<strong>Tabla 09:</strong> Se consideró una tasa de interés del 3%.
+</center>
+
+<br>
+
 5.1.2.1. Relación Beneficio/Costo (B/C)
 <center>
 
-![relacion-beneficio-costo](../media/relacion-beneficio-costo.png)
+![relacion-beneficio-costo](../media/beneficio-costo.png)
 
 </center>
 <center>
-<strong>Tabla 07:</strong> La Relación Beneficio/Costo (B/C) es de 2,07
+<strong>Tabla 10:</strong> La Relación Beneficio/Costo (B/C) es de 2,0.
 </center>
+
+<br>
+
 5.1.2.2. Valor Actual Neto (VAN)
 <center>
 
-![valor-actual-neto](../media/valor-actual-neto.png)
+![valor-actual-neto](../media/van.png)
 
 </center>    
 <center>
-<strong>Tabla 08:</strong> El Valor Actual Neto (VAN) es de S/ 1422,73
+<strong>Tabla 11:</strong> El Valor Actual Neto (VAN) es de S/ 1046,68.
 </center>        
 
+<br>
 
 5.1.2.3 Tasa Interna de Retorno (TIR)*
 <center>
 
-![tasa-interna-de-retorno](../media/tasa-interna-de-retorno.png)
+![tasa-interna-de-retorno](../media/tir.png)
 
 </center> 
 <center>
-<strong>Tabla 09:</strong> La Tasa Interna de Retorno (TIR) es del 6,9%
+<strong>Tabla 12:</strong> La Tasa Interna de Retorno (TIR) es del 6,9%
 </center>
 
 
@@ -434,8 +501,8 @@ En el ámbito social, PAMIS tiene un impacto positivo al responder a las necesid
 
 Desde la perspectiva ambiental, PAMIS también tiene un enfoque responsable y sostenible. Al ser una solución digital, no requiere de infraestructura física adicional, lo que minimiza su huella ecológica. La plataforma contribuye a reducir el uso de papel y otros recursos materiales dentro de la universidad, alineándose con el compromiso de la UPT hacia la sostenibilidad y la preservación del medio ambiente. Al promover la digitalización y el acceso en línea a la información académica, PAMIS se integra de manera efectiva en los esfuerzos por hacer de la educación un proceso más respetuoso con el entorno.
 
-El análisis detallado de los criterios de inversión en soles peruanos confirma la viabilidad financiera del proyecto. En primer lugar, la Relación Beneficio/Costo (B/C) de 2.07 significa que, por cada sol invertido, el proyecto generará 2.07 soles en beneficios. Esto es una clara señal de que el proyecto es rentable, ya que un valor superior a 1 en la relación B/C indica que los ingresos generados por el proyecto no solo cubrirán los costos de inversión, sino que también producirán una ganancia considerable. Esto es particularmente importante, ya que asegura que el proyecto tiene un retorno suficiente para justificar la inversión, aportando un beneficio neto significativo a la institución o entidad que lo lleve a cabo.
+El análisis detallado de los criterios de inversión en soles peruanos confirma la viabilidad financiera del proyecto. En primer lugar, la Relación Beneficio/Costo (B/C) de 2.0 significa que, por cada sol invertido, el proyecto generará 2.0 soles en beneficios. Esto es una clara señal de que el proyecto es rentable, ya que un valor superior a 1 en la relación B/C indica que los ingresos generados por el proyecto no solo cubrirán los costos de inversión, sino que también producirán una ganancia considerable. Esto es particularmente importante, ya que asegura que el proyecto tiene un retorno suficiente para justificar la inversión, aportando un beneficio neto significativo a la institución o entidad que lo lleve a cabo.
 
-Además, el Valor Actual Neto (VAN) de S/ 1,422.73 refuerza aún más esta conclusión. El VAN representa el valor presente de los ingresos futuros que el proyecto generará, descontados por la tasa de interés del 3%. Un VAN positivo, como es el caso aquí, significa que el proyecto generará un excedente de S/ 1,422.73 por encima de los costos iniciales, lo que indica que los flujos de caja futuros tienen un valor actual mayor que la inversión necesaria. Esto sugiere que el proyecto no solo es capaz de recuperar su inversión, sino que también producirá un valor adicional que beneficiará a los involucrados, demostrando que es una decisión financiera acertada.
+Además, el Valor Actual Neto (VAN) de S/ 1,046.68 refuerza aún más esta conclusión. El VAN representa el valor presente de los ingresos futuros que el proyecto generará, descontados por la tasa de interés del 3%. Un VAN positivo, como es el caso aquí, significa que el proyecto generará un excedente de S/ 1,422.73 por encima de los costos iniciales, lo que indica que los flujos de caja futuros tienen un valor actual mayor que la inversión necesaria. Esto sugiere que el proyecto no solo es capaz de recuperar su inversión, sino que también producirá un valor adicional que beneficiará a los involucrados, demostrando que es una decisión financiera acertada.
 
 Por último, la Tasa Interna de Retorno (TIR) del 6.9% es un indicador clave de la rentabilidad del proyecto. La TIR mide la tasa de retorno que el proyecto generará sobre la inversión inicial. En este caso, una TIR del 6.9% supera considerablemente la tasa de interés utilizada para descontar los flujos de caja, que es del 3%. Esto significa que el proyecto es capaz de generar un retorno mayor que el costo del capital, lo cual es crucial para su éxito. Una TIR mayor que la tasa de interés asegura que la inversión no solo será recuperada, sino que también proporcionará una rentabilidad atractiva.
