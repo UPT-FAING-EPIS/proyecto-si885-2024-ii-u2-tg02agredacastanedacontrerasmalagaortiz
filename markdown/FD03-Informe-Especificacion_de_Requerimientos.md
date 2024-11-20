@@ -445,7 +445,7 @@ Diagrama 03: El diagrama muestra cómo el Estudiante interactúa con el sistema 
 
 ### Objetos Entidad  
 
-![objeto_entidad](../media/objeto_entidad.png)
+![objeto_entidad](../media/entidad.png)
 
 Gráfico 02: Objetos entidad en el sistema PAMIS.
 
