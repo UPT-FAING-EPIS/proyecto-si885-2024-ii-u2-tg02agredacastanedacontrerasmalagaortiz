@@ -267,7 +267,7 @@ La creación y el despliegue de los recursos en Azure se gestionan mediante Terr
 
 **Infraestructura de Red**
 
-- **Conexión a Internet:** <p style="text-align: justify;">Una conexión a internet de alta velocidad es esencial para garantizar la disponibilidad y el acceso continuo a los servicios en la nube. Esto es especialmente crítico para la operación de Azure Data Factory y las consultas en tiempo real hacia Azure Synapse Analytics.
+- **Conexión a Internet:** <p style="text-align: justify;">Una conexión a internet de alta velocidad es esencial para garantizar la disponibilidad y el acceso continuo a los servicios en la nube.
 </p>
 
 ### 4.2. Factibilidad Económica
