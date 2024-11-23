@@ -246,12 +246,6 @@ Se usará para crear informes, gráficos interactivos y el dashboard principal; 
 
   - *Power BI:* Herramienta es para la creación de dashboards y visualizaciones de datos interactivos, además de ser poderosa para los análisis de datos.
 
-  - *Azure Data Factory:* Implementado para gestionar pipelines de datos automatizados que integran y transforman información desde las fuentes hacia el almacén de datos.
-
-  - *Azure Synapse Analytics:* Utilizado como almacén de datos centralizado y para realizar análisis avanzados en grandes volúmenes de datos.
-
-  - *Azure DevOps:* Plataforma para la gestión de repositorios, pipelines de CI/CD y control de versiones de los artefactos generados.
-
   - *Azure SQL Database:* Base de datos transaccional utilizada para la gestión de datos académicos.
 
   
@@ -265,21 +259,11 @@ Se usará para crear informes, gráficos interactivos y el dashboard principal; 
 
 - **Azure SQL Database:** Base de datos llamada CICLO_UNIVERSITARIO, con una capacidad de hasta 32 GB de almacenamiento, una capacidad minima de 0.5 vCores para ahorrar costos cuando está inactiva y cuenta con una auto-pausa que se activa tras 60 minutos de inactividad.
 
-- **Azure Data Factory:** Automatización de procesos ETL para cargar y transformar datos desde sistemas de origen hacia Azure SQL Database y Synapse Analytics.
-
-- **Azure Synapse Analytics:** Almacén de datos centralizado para integrar y analizar grandes volúmenes de información académica. Optimizado para consultas analíticas rápidas conectadas a Power BI.
-
 - **Terraform:** Infraestructura definida como código para garantizar consistencia y despliegue automatizado de recursos en Azure.
-
-- **Azure Key Vaul:** Gestión segura de credenciales y secretos, como contraseñas y claves de acceso, utilizadas en los diferentes servicios de Azure.
-
-- **Azure DevOps:** Pipelines de CI/CD configurados para despliegues automatizados y gestión de versiones de artefactos generados.
 
 **Automatización**
 
 La creación y el despliegue de los recursos en Azure se gestionan mediante Terraform, lo que asegura que los entornos de desarrollo, pruebas y producción se configuren de forma uniforme.
-
-Los pipelines de CI/CD en Azure DevOps integran los artefactos generados, como scripts SQL, configuraciones de Data Factory y dashboards de Power BI, garantizando actualizaciones consistentes y seguras.
 
 **Infraestructura de Red**
 
