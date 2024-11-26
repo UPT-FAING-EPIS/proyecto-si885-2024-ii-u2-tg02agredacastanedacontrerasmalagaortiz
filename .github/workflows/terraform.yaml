@@ -56,8 +56,11 @@ jobs:
         run: |
           curl -Lo inframap-linux-amd64.tar.gz https://github.com/cycloidio/inframap/releases/download/v0.7.0/inframap-linux-amd64.tar.gz
           tar -xzf inframap-linux-amd64.tar.gz
-          chmod +x inframap
-          sudo mv inframap /usr/local/bin/
+          chmod +x inframap-linux-amd64
+          sudo mv inframap-linux-amd64 /usr/local/bin/inframap
+
+
+      
 
       - name: Generate Inframap
         working-directory: ./terraform
