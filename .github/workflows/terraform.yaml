@@ -59,13 +59,20 @@ jobs:
           chmod +x inframap-linux-amd64
           sudo mv inframap-linux-amd64 /usr/local/bin/inframap
 
+      - name: Verify terraform.tfstate
+        working-directory: ./terraform
+        run: ls -l
 
       - name: Generate Inframap
         working-directory: ./terraform
+        if: success() && steps.verify.outputs.contains('terraform.tfstate')
         run: |
-          terraform show -json > tfplan.json
-          inframap generate tfplan.json --printer dot > inframap.dot
+          inframap generate terraform.tfstate --printer dot > inframap.dot
           dot -Tpng inframap.dot -o inframap.png
+
+
+          
+
 
 
       - name: Upload Inframap
