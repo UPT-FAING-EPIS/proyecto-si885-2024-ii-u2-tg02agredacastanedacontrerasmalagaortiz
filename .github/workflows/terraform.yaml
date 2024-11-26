@@ -1,7 +1,7 @@
 name: 'Terraform'
 on:
   workflow_dispatch:
-    
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
       - name: Install Infracost
         run: |
           curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
-          infracost configure set api_key ${{ secrets.INFRACOST_API_KEY }}
+          infracost configure set api_key ico-s7GdBC5T23puW5Ehw6Nrdb56CS8kKpB8
           infracost configure set currency USD
 
       - name: Infracost breakdown
@@ -49,9 +49,15 @@ jobs:
         run: infracost output --path infracost.json --format table
 
       # INFRAMAP
+      - name: Install Graphviz
+        run: sudo apt-get install -y graphviz
+
       - name: Install Inframap
         run: |
-          curl -fsSL https://raw.githubusercontent.com/cycloidio/inframap/master/scripts/install.sh | sh
+          curl -Lo inframap-linux-amd64.tar.gz https://github.com/cycloidio/inframap/releases/download/v0.7.0/inframap-linux-amd64.tar.gz
+          tar -xzf inframap-linux-amd64.tar.gz
+          chmod +x inframap
+          sudo mv inframap /usr/local/bin/
 
       - name: Generate Inframap
         working-directory: ./terraform
