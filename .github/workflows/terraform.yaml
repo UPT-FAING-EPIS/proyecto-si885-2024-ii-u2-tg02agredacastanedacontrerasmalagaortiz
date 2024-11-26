@@ -60,14 +60,13 @@ jobs:
           sudo mv inframap-linux-amd64 /usr/local/bin/inframap
 
 
-      
-
       - name: Generate Inframap
         working-directory: ./terraform
         run: |
           terraform show -json > tfplan.json
-          inframap generate --input tfplan.json --output inframap.dot
+          inframap generate tfplan.json --printer dot > inframap.dot
           dot -Tpng inframap.dot -o inframap.png
+
 
       - name: Upload Inframap
         uses: actions/upload-artifact@v3
