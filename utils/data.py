@@ -49,7 +49,6 @@ excel_files = [
     './Consolidado/Consolidado_semestre_2021-II.xlsx',
     './Consolidado/Consolidado_semestre_2022-I.xlsx',
     './Consolidado/Consolidado_semestre_2022-II.xlsx',
-    './Consolidado/Consolidado_semestre_2023-I.xlsx',
 ]
 
 for file in excel_files:
