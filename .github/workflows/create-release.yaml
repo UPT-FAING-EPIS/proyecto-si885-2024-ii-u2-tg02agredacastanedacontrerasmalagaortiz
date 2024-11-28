@@ -1,0 +1,30 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - "v*" # Se activa cuando se genera un tag que comienza con "v", como "v1.0.0"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Verifica el repositorio
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Crear un release en GitHub
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }} # Nombre del tag (por ejemplo, "v1.0.0")
+          release_name: "Release ${{ github.ref_name }}" # Nombre del release
+          body: |
+            ## Cambios en esta versión
+            - Describe aquí los cambios realizados.
+            - Agrega información importante.
+          draft: false # Si es un draft, configúralo en true
+          prerelease: false # Cambia a true si es una pre-lanzamiento
