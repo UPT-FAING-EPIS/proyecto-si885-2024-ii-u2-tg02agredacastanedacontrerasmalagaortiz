@@ -27,29 +27,24 @@ resource "azurerm_mssql_database" "sql_db" {
 }
 
 
-resource "azurerm_app_service_plan" "app_service_plan" {
+resource "azurerm_service_plan" "app_service_plan" {
   name                = "ASP-inteligencianegocios-b3b4"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
+
   sku {
     tier = "Basic"
     size = "B1"
   }
 }
 
-
 resource "azurerm_app_service" "web_app" {
-  name                = "UploadCSV"
+  name                = "UploadCSV-unique123" # Cambia a un nombre único
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  app_service_plan_id = azurerm_app_service_plan.app_service_plan.id
+  app_service_plan_id = azurerm_service_plan.app_service_plan.id
 
   site_config {
-    linux_fx_version = "DOCKER|alvarocontreras13/uploadcsv-app:v1" # Configura la imagen Docker de tu Web App
-  }
-
-  app_settings = {
-    WEBSITE_RUN_FROM_PACKAGE = "1"
+    linux_fx_version = "DOCKER|alvarocontreras13/uploadcsv-app:v1"
   }
 }
-
