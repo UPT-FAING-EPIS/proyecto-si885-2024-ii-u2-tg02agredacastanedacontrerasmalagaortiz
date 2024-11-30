@@ -36,7 +36,7 @@ resource "azurerm_service_plan" "app_service_plan" {
 }
 
 resource "azurerm_app_service" "web_app" {
-  name                = "UploadCSV-unique123" # Cambia a un nombre único
+  name                = "UploadCSV-unique123"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   app_service_plan_id = azurerm_service_plan.app_service_plan.id
